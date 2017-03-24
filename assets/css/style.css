@@ -1,5 +1,8 @@
 body{
-    background-color:#e2dbd2;
+    background: -webkit-radial-gradient(#feb3ad, #fd695d); 
+background: -o-radial-gradient(#feb3ad, #fd695d);
+background: -moz-radial-gradient(#feb3ad, #fd695d);
+background: radial-gradient(#feb3ad, #fd695d);
 }
 
 h1 {
@@ -49,8 +52,20 @@ li.sub{
     
 }
 
-.navbar-default{
-    background-color: #6e9698;
+.navbar-default.navbar-main{
+    background-image: none;
+    background-color: rgba(255,255,255,0.5);
+    /*filter:alpha(opacity=20); -moz-opacity:0.2; -khtml-opacity: 0.2; opacity: 0.2; */
+}
+
+.button.button-nav{
+    component-active-color: red;
+}
+
+.div-rotate {
+  -webkit-transform: rotate(6deg);
+      -ms-transform: rotate(6deg);
+          transform: rotate(6deg);
 }
 
 
