@@ -1,62 +1,156 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Yenan's Site</title>
-        <!--jquery-->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<head>
+    <title>Yenan's Site</title>
+    <link rel="bookmark" type="image/x-icon" href="pics/logo_400.png"/>
+    <link rel="shortcut icon" href="pics/logo_160.png">
+    <link rel="icon" href="pics/logo_160.png">
+    <!--jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
-        <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-        <!-- Optional theme -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-        <!-- Latest compiled and minified JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-        
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="assets/css/style.css">
-    </head>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-    <body>
-        <nav class="navbar navbar-default navbar-main">
-            <div class="container-fluid">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                 <div class="navbar-header">
-                    <button type="button button-nav" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" aria-controls="navbar">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand">
-                        <img alt="Brand" src="image/logo.png" height=25>
-                    </a>
-                    <a class="navbar-brand">THE DESIGN</a>
-                </div>
+    <!--mouse hover effect  -->
+    <link rel="stylesheet" type="text/css" href="assets/css/component_index.css" />
 
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a href="#">Home <span class="sr-only"></span></a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="work.html">Work</a></li>
-                    </ul>
-                </div><!-- /.navbar-collapse -->
-            </div><!-- /.container-fluid -->
-        </nav>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <div class="container">
-            <div class="row">
-                <img src="image/index.jpg" class="img-responsive" alt="Responsive image">
-            </div>
-            <div class="row">
-                <div class="col-md-8 col-md-offset-2">
-                    <h1>This is the Design</h1>
-                    <h3><b>of Yenan Lin</b></h3>
-                </div>
-            </div>
+    <link rel="stylesheet" href="assets/css/style_index.css">
+
+
+</head>
+
+<body>
+
+    <!--<main class="main-banner">
+		<div id="maintitle">
+			<h1>LIN'S DESIGN</h1>		
+		</div>
+        <div id="subtitle" align="center">
+            <img src="pics/arrow_down.png" onclick="scroller('item1', 500)">
         </div>
-    </body>
+	</main>-->
+
+    <!--<div class="container" style="background:url(pics/cover3.png);height:300px;width:100%">-->
+    <div class="container" style="background:#eee;height:200px;width:100%">
+        <div class="box-blank"></div> 
+        <div class="box-blank"></div>
+        <h1 style="position:relative;">This is Yenan LIN.</h1>
+        <div class="box-blank"></div> 
+        <div class="box-blank"></div> 
+    </div>
+
+    <div class="container">
+        
+        <div class="box-blank"></div>
+        <a name="pos"><div class="box-blank" id="item1"></div></a>          
+
+        <div class="grid">
+            <figure class="effect-sadie" id="profileme">
+                <img src="pics/banner_portrait.png">
+                <figcaption>
+                    <h2><span>A &nbsp; Designer</span><br>in &nbsp; Practice</h2>
+                    <p>Graduate student <br> from IIT Institute of Design. </p>
+                    <a href="files/resume.pdf" target="_blank">View more</a>
+                </figcaption>			
+            </figure>
+            <figure class="effect-sadie">
+                <img src="pics/banner_wabash.png">
+                <figcaption>
+                    <h2>Reimagine <br><span>Wabash &nbsp; Tourism</span></h2>
+                    <p>-- Service Design --<br><br><br>to revitalize Wabash Avenue 
+                        <br>and make it a destination
+                        <br>in the lens of tourism.</p>
+                    <a href="wabash.html" target="_blank">View more</a>
+                </figcaption>			
+            </figure>
+            <figure class="effect-sadie">
+                <img src="pics/banner_baios.png">
+                <figcaption>
+                    <h2> <br><span>BAIOS</span></h2>
+                    <p>-- Design Strategy --<br><br><br>A Virtual Reality platform 
+                        <br>that facilitates the exploration of 
+                        <br> ecology and the connectedness of ecosystems.</p>
+                    <a href="wabash.html" target="_blank">View more</a>
+                </figcaption>			
+            </figure>
+            <figure class="effect-sadie">
+                <img src="pics/banner_kb.png">
+                <figcaption>
+                    <h2>Knowledge &nbsp; Brokering &amp; <br><span>Workshop &nbsp; Planning</span></h2>
+                    <p>-- Design Strategy --<br><br><br>Further investigation into 
+                        <br> knowledge brokering process.</p>
+                    <a href="wabash.html" target="_blank">View more</a>
+                </figcaption>			
+            </figure>
+            <figure class="effect-sadie">
+                <img src="pics/banner_bango.png">
+                <figcaption>
+                    <h2> <br><span>Bango</span></h2>
+                    <p>-- Interaction Design --<br><br><br>Online shopping platform on Xiaomi Smart TV</p>
+                    <a href="wabash.html" target="_blank">View more</a>
+                </figcaption>			
+            </figure>
+            <figure class="effect-sadie">
+                <img src="pics/banner_copd.png">
+                <figcaption>
+                    <h2>Realities &nbsp; of <br><span>COPD &nbsp; Caregiver</span></h2>
+                    <p>-- Communication Design --<br><br><br>Better understand the realities of 
+                        <br> home management of COPD that will be faced 
+                        <br> by non medical trained caregivers.<br></p>
+                    <a href="wabash.html" target="_blank">View more</a>
+                </figcaption>			
+            </figure> 
+            <figure class="effect-sadie">
+                <img src="pics/banner_uber.png">
+                <figcaption>
+                    <h2>How &nbsp; to &nbsp; find <br><span>Your &nbsp; Uber</span></h2>
+                    <p>-- User Experience Design --<br><br><br>Analysis of human experience factors 
+                        <br> in various scales and unscramble 
+                        <br> an upgrading for Uber's service<br></p>
+                    <a href="wabash.html" target="_blank">View more</a>
+                </figcaption>			
+            </figure>           
+        </div>
+
+        <div class="box-blank"></div>
+        <div class="box-blank"></div>      
+        <div name="1F"> </div>
+
+    </div>
+    <div class="container container-bottom"> 
+        <div class="box-blank"></div>
+        <div class="box-blank"></div>    
+        <div class="row" align="center">
+            <a href="http://www.facebook.com/yenan.lin.18">
+                <img id="link" src="pics/logo_facebook.png">
+            </a>
+            <a href="https://www.linkedin.com/in/sophielynnn/?locale=en_US">
+                <img id="link" src="pics/logo_linkedin.png">
+            </a>
+            <a href="https://github.com/sophielynn/sophielynn.github.io">
+                <img id="link" src="pics/logo_github.png">
+            </a>
+            <a href="mailto:ylin89@id.iit.edu">
+                <img id="link" src="pics/logo_email.png">
+            </a>
+        </div>
+        
+        <div class="row" align="center">
+            <h4>© 2017 Yenan Lin all rights reserved</h4>
+        </div>
+        <div class="box-blank"></div> 
+         
+    </div>
+
+    <script src="assets/js/scroll.js"></script> 
+   
+</body>
 </html>

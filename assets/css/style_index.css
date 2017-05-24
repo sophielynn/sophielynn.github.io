@@ -1,0 +1,109 @@
+body, html, main {
+    height: 100%;
+}
+
+body{
+    background:url("../../pics/cover2.png");
+    filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale')";
+    min-height: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+h1{
+    color:#774cfd;
+    /*color:white;*/
+    text-align: left;
+    vertical-align: bottom;
+    margin-top:60px;
+    font-size: 5em;
+    font-family: 'PT Sans', sans-serif;
+}
+
+h2{
+   font-family: 'PT Sans', sans-serif;
+}
+
+h4{
+    color:white;
+    font-size: 10px;
+    margin-top:70px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+#maintitle{    
+    position: absolute;   
+    width:500px;   
+    height:200px;   
+    left:50%;   
+    top:50%;   
+    margin-left:-250px; 
+    margin-top:-100px;   
+    border: solid 10px #ffffff;   
+}  
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    50% {opacity: 0.5;}
+    100% {opacity: 1;}
+    20% {opacity: 0.2;}
+}
+
+@-webkit-keyframes fadeIn {
+    0% {opacity: 0;}
+    50% {opacity: 0.5;}
+    100% {opacity: 1;}
+    20% {opacity: 0.2;}
+}
+
+#subtitle{    
+    position: absolute;   
+    width:500px;   
+    height:200px;   
+    left:50%;   
+    top:90%;   
+    margin-left:-250px; 
+    margin-top:-100px; 
+
+    animation-name: fadeIn; /*动画名称*/
+    animation-duration: 1s; /*动画持续时间*/
+    animation-iteration-count: 3; /*动画次数*/
+    animation-delay: 2s; /*延迟时间*/
+    -webkit-animation-name: fadeIn; /*动画名称*/
+    -webkit-animation-duration: 1s; /*动画持续时间*/
+    -webkit-animation-iteration-count: 3; /*动画次数*/
+    -webkit-animation-delay: 2s; /*延迟时间*/
+}  
+
+.box-blank{
+    height: 50px;
+    width: 100%;
+}
+
+.container{
+    background-image: none;
+    background-color: #eeeeee;
+    width: 100%;
+    align-content: center;
+    padding-left:5%;
+    padding-right:5%;
+}
+
+.container.container-bottom{
+    background-image: none;
+    background-color: #774cfd;
+    width: 100%;
+    align-content: center;
+    padding-left:5%;
+    padding-right:5%;
+}
+
+#link{      
+    padding-left:55px; 
+    padding-right:55px;
+    width: 140px;   
+}
+
+

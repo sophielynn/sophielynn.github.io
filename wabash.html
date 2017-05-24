@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Yenan's Site</title>
+    <link rel="bookmark" type="image/x-icon" href="pics/logo_400.png"/>
+    <link rel="shortcut icon" href="pics/logo_160.png">
+    <link rel="icon" href="pics/logo_160.png">
+    <!--jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <!--side menu effect  -->
+    <link rel="stylesheet" type="text/css" href="assets/css/component_branch.css"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="assets/css/style_branch.css">
+    <style>
+        header{
+            background:url("pics/cover_wabash.png");
+            background-size:100%;
+        }
+        header.sticky,.container.container-bottom,.nav--ubax .nav__item--current::after{
+            background:#9a7352;
+        }
+        p em, h2{
+            color: #9a7352;
+        }
+    </style>
+
+</head>
+<body>
+
+    <header>
+        <h1 id="mainhead">Reimagine Wabash Tourism</h1>
+        <h1 id="subhead"> A wholistic project working with local associations and 
+            provide our client a refreshing way to vision the problem. </h1>
+    </header>
+
+    <div class="container">
+        <div class="box-blank"></div>
+        <div class="box-blank" id="item1"></div> 
+
+        <div id="left" class="col-xs-6 col-md-3">
+            <div class="col-xs-6 col-md-10 col-md-offset-1">
+                <div><p class="info">Topic source<br><em>2017 S, Multidisciplinary Prototyping for Entrepreneurs, Institute of Design</em></p></div>
+                <div><p class="info">Advisor<br><em>Anijo Punnen Mathew, Andre Nogueira</em></p></div>
+                <div><p class="info">Teammates<br><em>Shilpa Mathew, Siqi Zhang, Wanying Zhu</em></p></div>
+                <div><p class="info">Project Length<br><em>7-week Workshop</em></p></div>
+            </div>
+            <main>
+                <section class="section section--nav" id="Ubax">
+                    <span class="link-copy"></span>
+                    <nav class="nav nav--ubax">
+                        <button class="nav__item nav__item--current" aria-label="Item 1" onclick="scroller('item1', 500)"><span class="nav__item-title">Design Brief</span></button>
+                        <button class="nav__item" aria-label="Item 2" onclick="scroller('item2', 500)"><span class="nav__item-title">Overview</span></button>
+                        <button class="nav__item" aria-label="Item 3" onclick="scroller('item3', 500)"><span class="nav__item-title">Problem Reframe</span></button>
+                        <button class="nav__item" aria-label="Item 4" onclick="scroller('item4', 500)"><span class="nav__item-title">Research</span></button>
+                        <button class="nav__item" aria-label="Item 5" onclick="scroller('item5', 500)"><span class="nav__item-title">Synthesis</span></button>
+                        <button class="nav__item" aria-label="Item 6" onclick="scroller('item6', 500)"><span class="nav__item-title">Solution</span></button>
+                        <button class="nav__item" aria-label="Item 7" onclick="scroller('item7', 500)"><span class="nav__item-title">System</span></button>
+                        <div class="box-blank"></div>
+                        <button class="nav__item" aria-label="Item 9" onclick="javascript:window.location.href='index.html#pos' "><span class="nav__item-title linktopage">HOME</span></button>
+                        <button class="nav__item" aria-label="Item 10" onclick="javascript:window.location.href='index.html' "><span class="nav__item-title linktopage">NEXT</span></button>
+                    </nav>
+                </section>		
+            </main>
+        </div>
+
+        
+        <div id="right" class="col-xs-12 col-md-8 col-md-offset-0">
+            <!--Design Brief-->
+            <div class="container-fluid"> 
+                <h2>Design Brief</h2>
+                <div class="box-blank"></div>                
+                <div class="row">
+                    <div class="col-xs-8 col-md-4" align="center" style="background-color:#fff">
+                        <img src="pics/wabash_state.png">
+                        <h3>State St</h3>
+                        <p><em>Shopping<br>Theaters<br>Landmarks</em></p>
+                    </div>
+                    <div class="col-xs-8 col-md-4" align="center">
+                        <img src="pics/wabash_wabash1.png">
+                        <h3>Wabash Ave</h3>
+                        <p style="font-size:48px"><em>?</em></p>
+                    </div>
+                    <div class="col-xs-8 col-md-4" align="center" style="background-color:#fff">
+                        <img src="pics/wabash_michigan.png">
+                        <h3>Michigan Ave</h3>
+                        <p><em>Cultural Institutions<br>Parks and Lake<br>Landmarks</em></p>
+                    </div>
+                </div>
+                <p><br>While sitting in between two biggest streets in Chicago,
+                    Wabash Avenue is under a train track which makes it <em>noisy, dark, dirty</em>
+                    and the least place people would like to hang out in the Loop.
+                    As a next strategic move to renovate the Loop in Chicago, 
+                    how to <em>make Wabash a destination</em> in the lenses of tourism becomes our topic.</p>  
+                <p>We work with <em>Chicago Loop Alliance</em> and also many other related associations.
+                    With tons of research, analysis and prototypes, we succeed with helping them to vision this posibility.</p>             
+            </div>
+
+            <!--Overview-->
+            <div class="container-fluid"> 
+                <div id="item2" class="box-blank"></div>
+                <h2>Overview of our Solution</h2>
+                <!--<div class="box-blank"></div>-->
+                <div class="row">
+                    <div class="col-xs-6 col-md-5">
+                        <h3>street as<br>GAMIFIED EXPLORATION</h3>
+                    </div>
+                    <div class="col-xs-2 col-md-1">
+                        <h3><br>+</h3>
+                    </div>
+                    <div class="col-xs-8 col-md-6">
+                        <h3><br>RESTFUL ENGAGEMENT</h3>
+                    </div>
+                </div>
+                <h3></h3>
+                <div class="row" align="center">
+                    <div class="col-xs-9 col-md-2" style="background:#a1bb1c;height:150px;">
+                        <p class="reverse"><br><br>Explore at leisure</p>
+                    </div>
+                    <div class="col-xs-9 col-md-2" style="background:#a1bb1c;height:150px;opacity:0.7;">
+                        <p class="reverse"><br><br>Interesting &amp; informative facts</p>
+                    </div>
+                    <div class="col-xs-6 col-md-2 col-md-offset-2" style="background:#9a7352;height:150px;opacity:0.5;">
+                        <p class="reverse"><br><br>Relax, eat &amp; drink</p>
+                    </div>
+                    <div class="col-xs-6 col-md-2" style="background:#9a7352;height:150px;opacity:0.7;">
+                        <p class="reverse"><br><br>Soak up views of the train</p>
+                    </div>
+                    <div class="col-xs-6 col-md-2" style="background:#9a7352;height:150px;">
+                        <p class="reverse"><br><br>Post on social media</p>
+                    </div>
+                </div>                
+            </div>
+
+            <!--Problem Reframe-->
+            <div class="container-fluid"> 
+                <div id="item3" class="box-blank"></div>
+                <h2>Problem Reframe</h2>
+                <div class="box-blank"></div>
+                <div class="row" style="background-color:#fff">
+                    <div class="col-xs-7 col-md-5">
+                        <h3>In a strategic perspective of <br>Chicago Loop Alliance</h3>
+                        <p><br>to attract <em>NEW INVESTMENT</em> along Wabash Avenue<br>
+                            to respond to the <em>NEEEDS OF TODAY’S CONSUMERS</em><br>
+                            to maintain the community's <em>HISTORIC CHARACTER</em></p>
+                    </div>
+                    <div class="col-xs-1 col-md-1">
+                        <h3><br><br><br><br><span class="glyphicon glyphicon-menu-right" aria-hidden="true" style="width:20px;"></span></h3>
+                    </div>
+                    <div class="col-xs-8 col-md-6">
+                        <h3>In a subjective perspective of <br>Wabash Avenue</h3>
+                        <p><em><br>CHARACTERS AND CULTURE</em> of wabash is not highlighted enough to create an immersive and memorable experience<br>
+                        <em>People’s PERCEPTION</em> of Wabash is that it’s loud and dark<br>
+                        <em>Wabash ECOSYSTEM</em> doesn’t cater to any specific demographic</em></p>
+                    </div>
+                </div>
+            </div>
+
+            <!--Research-->
+            <div class="container-fluid"> 
+                <div id="item4" class="box-blank"></div>
+                <h2>Research</h2>
+                <!--<div class="box-blank"></div>-->
+                <h3>we spoke to</h3>
+                <h3></h3>
+                <div class="row" align="center">
+                    <div class="col-xs-6 col-md-2">
+                        <img src="pics/wabash_p_amanda.png">
+                        <h3>Amanda</h3>
+                        <p><em>Chicago Detours</em></p>
+                    </div>
+                    <div class="col-xs-6 col-md-2">
+                        <img src="pics/wabash_p_jason.png">
+                        <h3>Jason</h3>
+                        <p><em>Choose Chicago</em></p>
+                    </div>
+                    <div class="col-xs-6 col-md-2">
+                        <img src="pics/wabash_p_anna.png">
+                        <h3>Anna</h3>
+                        <p><em>Hi Chicago Hostel</em></p>
+                    </div>
+                    <div class="col-xs-6 col-md-2">
+                        <img src="pics/wabash_p_6.png">
+                        <h3></h3>
+                        <p><em>CLA Council Meeting Members</em></p>
+                    </div>
+                    <div class="col-xs-6 col-md-2">
+                        <img src="pics/wabash_p_3.png">
+                        <h3></h3>
+                        <p><em>Business Owners on Wabash</em></p>
+                    </div>
+                    <div class="col-xs-6 col-md-2">
+                        <img src="pics/wabash_p_6.png">
+                        <h3></h3>
+                        <p><em>Chicago Locals and Pedestrians on Wabash</em></p>
+                    </div>
+                </div>
+                <div class="box-blank"></div>
+                <img src="pics/wabash_insights.png">
+                <div class="box-blank"></div>    
+                <div>
+                    <h3 align="center" style="background-color:#fff;height:50px;padding-top:10px;">Wabash is full of hidden surprises</h3>  
+                    <div class="box-blank"></div>                   
+                    <div class="row" style="height:125px;">                        
+                        <div class="col-xs-6 col-md-3">
+                            <img src="pics/wabash_quote_04.png">
+                        </div>
+                        <div class="col-xs-6 col-md-3">
+                            <p>" The entire history of blues all started here with these three people. "</p>
+                            <p class="info"><br>Jonny - Buddy Guy's Legends</p>
+                        </div>
+                        <div class="col-xs-6 col-md-3">
+                            <img src="pics/wabash_quote_08.png">
+                        </div>
+                        <div class="col-xs-6 col-md-3" style="background-color:#fff;height:110px;">
+                            <p>" We have a 160-year-old history. We don’t like to publicize ourselves. Customers come through word-of-mouth. "</p>
+                            <p class="info">Chuck - Iwan Ries Company</p>
+                        </div>
+                    </div>
+                    <div class="row" style="height:125px;">
+                        <div class="col-xs-6 col-md-3">
+                            <p>" Chicago is the home of blues and Legends is the home of Chicago blues. "</p>
+                            <p class="info"><br>Jonny - Buddy Guy's Legends</p>
+                        </div>
+                        <div class="col-xs-6 col-md-3" style="background-color:#fff;height:110px;">
+                            <p>" Wabash has a collection of early 20 century buildings in the nation. "</p>
+                            <p class="info"><br>Tom - New York Jewelery</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-blank"></div> 
+                <div>
+                    <h3 align="center" style="background-color:#fff;height:50px;padding-top:10px;">Wabash is intimate</h3>  
+                    <div class="box-blank"></div>                
+                    <div class="row" style="height:125px;">  
+                        <div class="col-xs-6 col-md-3">
+                            <img src="pics/wabash_quote_01.png">
+                        </div>
+                        <div class="col-xs-6 col-md-3" style="background-color:#fff;height:110px;">
+                            <p>" Only when I started walking to the grocery store regularly did I notice all the nice things on Wabash. "</p>
+                            <p class="info">Anna - Hi Chicago Hostel</p>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <p>" When you go to the park, the park is just massive. It feels like the buildings are smaller, street narrower [on Wabash] - so it feels more intimate on Wabash. "</p>
+                            <p class="info"><br>Amanda - Chicago Detours</p>                            
+                        </div>
+                    </div>
+                    <div class="row" style="height:125px;">  
+                        <div class="col-xs-6 col-md-3"  style="background-color:#fff;height:110px;">
+                            <p>" I like that kind of secret feeling, I’ve always like to go into a secret tunnel for a walk. I like that, looking into the tunnel. "</p>
+                            <p class="info">Renee - Chicago Local</p>
+                        </div>
+                        <div class="col-xs-6 col-md-3">
+                            <p>" I don’t want you to mess with Wabash - I like it the way it is. "</p>
+                            <p class="info"><br><br>Bates - Chicago Local</p>
+                        </div>
+                        <div class="col-xs-6 col-md-3">
+                            <img src="pics/wabash_quote_05.png">
+                        </div>
+                        <div class="col-xs-6 col-md-3">
+                            <p>" People from suburbs would love trains more because they don’t have that. "</p>
+                            <p class="info"><br>Rey - Hi Chicago Hostel</p>
+                        </div>
+                    </div>
+                    <div class="row" style="height:125px;">  
+                        <div class="col-xs-6 col-md-3" style="background-color:#fff;height:110px;">
+                            <p>" Wabash is gritty, urban, authentic, very Chicago. "</p>
+                            <p class="info"><br><br>George - CLA Council</p>
+                        </div>
+                        <div class="col-xs-6 col-md-3">
+                            <img src="pics/wabash_quote_07.png">
+                        </div>                       
+                    </div>
+                </div>  
+                <div class="box-blank"></div> 
+                <div>
+                    <h3 align="center" style="background-color:#fff;height:50px;padding-top:10px;">People enjoy places that could tell them stories</h3>  
+                    <div class="box-blank"></div>                  
+                    <div class="row" style="height:125px;">
+                        <div class="col-xs-6 col-md-3">
+                            <p>" People don’t know what they don’t know. "</p>
+                            <p class="info"><br><br>Amanda - Chicago Detours</p>                            
+                        </div>
+                        <div class="col-xs-6 col-md-3">
+                            <p>" Often we are able to show tourists what they didn’t expect. "</p>
+                            <p class="info"<br><br>>Anna - Hi Chicago Hostel</p>
+                        </div>
+                        <div class="col-xs-6 col-md-3">
+                            <img src="pics/wabash_quote_06.png">
+                        </div>
+                        <div class="col-xs-6 col-md-3" style="background-color:#fff;height:110px;">
+                            <p>" Volunteers like to tell ‘when I have a day off this is what I like to do.’ It’s not TripAdvisor. "</p>
+                            <p class="info"><br>Anna - Hi Chicago Hostel</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-blank"></div> 
+                <div>
+                    <h3 align="center" style="background-color:#fff;height:50px;padding-top:10px;">People need constant new ways to interact with spaces</h3>  
+                    <div class="box-blank"></div>                  
+                    <div class="row" style="height:125px;">
+                        <div class="col-xs-6 col-md-3">
+                            <img src="pics/wabash_quote_03.png">
+                        </div>
+                        <div class="col-xs-6 col-md-3" style="background-color:#fff;height:110px;">
+                            <p>" People want to view their city from a different perspective. "</p>
+                            <p class="info"><br><br>Amanda - Chicago Detours</p>
+                        </div>
+                        <div class="col-xs-6 col-md-3">
+                            <p>" Most people would like to go to places of recognition. "</p>
+                            <p class="info"><br><br>Amanda - Chicago Detours</p>
+                        </div>
+                        <div class="col-xs-6 col-md-3">
+                            <img src="pics/wabash_quote_02.png">
+                        </div>
+                    </div>
+                    <div class="row" style="height:125px;">
+                        <div class="col-xs-6 col-md-3">
+                            <p>" I’ve walked by this street for hundred of times but I look at it in a totally different new way. "</p>
+                            <p class="info"><br>Amanda - Chicago Detours</p>
+                        </div>
+                        <div class="col-xs-6 col-md-3">
+                            <img src="pics/wabash_quote_11.png">
+                        </div>
+                        <div class="col-xs-6 col-md-3" style="background-color:#fff;height:110px;">
+                            <p>" Forget the maps,Follow your instincts. "</p>
+                            <p class="info"><br><br>Anna - Hi Chicago Hostel</p>
+                        </div>
+                        <div class="col-xs-6 col-md-3">
+                            <p>" Just walking around is a real way to appreciate the beauty. "</p>
+                            <p class="info"><br><br>Marty - Chicago Local</p>
+                        </div>
+                    </div>
+                </div>         
+            </div>
+
+            <!--Synthesis-->
+            <div class="container-fluid"> 
+                <div id="item5" class="box-blank"></div>
+                <h2>Synthesis</h2>
+                <div class="box-blank"></div>
+                <div class="row">
+                    <div class="col-xs-8 col-md-4" align="center" >
+                        <img src="pics/wabash_state.png" style="opacity:0.4;">
+                        <h3>State St</h3>
+                    </div>
+                    <div class="col-xs-8 col-md-4" align="center">
+                        <img src="pics/wabash_wabash1.png">
+                        <h3>Wabash Ave</h3>
+                    </div>
+                    <div class="col-xs-8 col-md-4" align="center">
+                        <img src="pics/wabash_michigan.png" style="opacity:0.4;">
+                        <h3>Michigan Ave</h3>
+                    </div>
+                </div>
+                <div style="background-color:#fff;height:150px;">
+                    <h3 align="center"><br><br>How might we guide people to explore the hidden treasures on Wabash?</h3>
+                </div>              
+            </div>
+
+            <!--Solution-->
+            <div class="container-fluid" align="center"> 
+                <div id="item6" class="box-blank"></div>
+                <h2 align="left">Solution</h2>
+                <div class="box-blank"></div>
+                <div class="row" style="background:url(pics/wabash_line.png);width:100%;height:300px;padding-top:20px;">
+                    <div class="col-xs-6 col-md-4">
+                        <h3 class="reverse"><br><br><br>GAMIFIED EXPLORATION</h3>
+                    </div>
+                    <div class="col-xs-6 col-md-4">
+                        <img src="pics/wabash_logo.png">
+                    </div>
+                    <div class="col-xs-6 col-md-4">
+                        <h3 class="reverse"><br><br><br>RESTFUL ENGAGEMENT</h3>
+                    </div>
+                </div>
+                <div class="box-blank"></div>
+                <div class="box-blank"></div>
+                <p><em>(Below is an example of the concept of GAME and REST)</em></p>
+                <img src="pics/wabash_line.png">
+                <div class="box-blank"></div>
+                <!--SCENE 00 INTRO-->
+                <div style="background-color:#fff">
+                    <img src="pics/wabash_story_00.png">
+                    <p><br>This is Oscar and his family, the mother Carrie and the 15-year-old daughter Haley. 
+                        <br>They come to Chicago for a spring break trip from Wisconsin.</p>
+                    <div class="box-blank"></div>
+                </div>
+                <!--SCENE 01 THE BEAN-->
+                <div class="box-blank"></div>
+                <p><em>SCENE 01</em></p>
+                <img src="pics/wabash_line.png">
+                <div class="box-blank"></div>
+                <div style="background-color:#fff">
+                    <div>                   
+                        <img src="pics/wabash_story_01.png">
+                        <p><br>It's a great morning, and they come to the Cloud Gate (also known as the Bean).
+                            <br>It is a must-go-and-see place for most tourists in Chicago.</p>
+                        <div class="box-blank"></div>
+                    </div>
+                    <div>
+                        <img src="pics/wabash_story_02a.png" 
+                            onmouseover="this.src='pics/wabash_story_02b.png'" 
+                            onmouseout="this.src='pics/wabash_story_02a.png'">
+                        <p><br>When they approaching, Haley finds a sign painted on the ground</p>
+                        <p><em>move your mouse to see the sign</em></p>
+                        <div class="box-blank"></div>
+                    </div>
+                    <div>
+                        <img src="pics/wabash_story_03a.png" 
+                            onmouseover="this.src='pics/wabash_story_03b.png'" 
+                            onmouseout="this.src='pics/wabash_story_03a.png'">
+                        <p><br>They feel interesting about this quiz and start finding the tallest building.
+                            <br>they spend a great time and take a lot of pictures as well 
+                            which in the meanwhile, they find another clue on the ground.</p>
+                        <p><em>move your mouse to find out the answer and next clue</em></p>
+                        <div class="box-blank"></div>
+                    </div>
+                    <div>
+                        <img src="pics/wabash_story_04.png">
+                        <p><br>They are really curious about this "dark" place. So they follow the path. </p>
+                        <div class="box-blank"></div>
+                    </div>
+                </div>
+                <!--SCENE 02 THE ALLEY-->
+                <div class="box-blank"></div>
+                <p align="center"><em>SCENE 02</em></p>
+                <img src="pics/wabash_line.png">
+                <div class="box-blank"></div>
+                <div style="background-color:#fff">
+                    <div>
+                        <img src="pics/wabash_story_05a.png" 
+                                onmouseover="this.src='pics/wabash_story_05b.png'" 
+                                onmouseout="this.src='pics/wabash_story_05a.png'">
+                        <p><br>They come to an alley where there are music, food trucks and city seats.
+                            A Chicago style hotdog cures their hunger and tiredness.
+                            <br>They also find so many people taking pictures with the interactive mural and so do they.</p>
+                        <p><em>move your mouse to find out the next clue</em></p>
+                        <div class="box-blank"></div>
+                    </div>
+                    <div>
+                        <img src="pics/wabash_story_06.png">
+                        <p><br>They keep heading along the sign on the column and they find Wabash Light just near by.</p>
+                        <div class="box-blank"></div>
+                    </div>
+                </div>
+                <!--SCENE 03 PALMER HOUSE-->
+                <div class="box-blank"></div>
+                <p align="center"><em>SCENE 03</em></p>
+                <img src="pics/wabash_line.png">
+                <div class="box-blank"></div>
+                <div style="background-color:#fff">
+                    <div>
+                        <img src="pics/wabash_story_07a.png" 
+                                onmouseover="this.src='pics/wabash_story_07b.png'" 
+                                onmouseout="this.src='pics/wabash_story_07a.png'">
+                        <p><br>Led by the sign, they come to the famouse Palmer House. 
+                        Fabulous decorations are right in front of them.</p>
+                        <p><em>move your mouse to see the sign</em></p>
+                        <div class="box-blank"></div>
+                    </div>
+                    <div>
+                        <img src="pics/wabash_story_07a.png" 
+                                onmouseover="this.src='pics/wabash_story_07c.png'" 
+                                onmouseout="this.src='pics/wabash_story_07a.png'">
+                        <p><br>They look over and over and finally, Haley screams out, "look, oh deer!"</p>
+                        <p><em>move your mouse to find out the answer and next clue</em></p>
+                        <div class="box-blank"></div>
+                    </div>
+                    <div>
+                        <img src="pics/wabash_story_08.png">
+                        <p><br>They keep walking and start to feel a little bit tired as time goes by.</p>
+                        <div class="box-blank"></div>
+                    </div>
+                </div>
+                <!--SCENE 04 PHOTO SPOT-->
+                <div class="box-blank"></div>
+                <p align="center"><em>SCENE 04</em></p>
+                <img src="pics/wabash_line.png">
+                <div class="box-blank"></div>
+                <div style="background-color:#fff">
+                    <div>
+                        <img src="pics/wabash_story_09a.png" 
+                                onmouseover="this.src='pics/wabash_story_09c.png'" 
+                                onmouseout="this.src='pics/wabash_story_09a.png'">
+                        <p><br>They come to a photo booth where it provides a great angle to the view of the ART INSTITUTE OF Chicago.
+                            <br>Haley is excited and immediately takes a photo which she would definitely get hundreds of likes on Instagram. </p>
+                        <p><em>move your mouse to check out the picture they take</em></p>
+                        <div class="box-blank"></div>
+                    </div>
+                    <div>
+                        <img src="pics/wabash_story_10.png">
+                        <p><br>They keep following the marks on the wall which lead them to the Macy's.</p>
+                        <div class="box-blank"></div>
+                    </div>
+                </div>
+                <!--SCENE 05 MACY-->
+                <div class="box-blank"></div>
+                <p align="center"><em>SCENE 05</em></p>
+                <img src="pics/wabash_line.png">
+                <div class="box-blank"></div>
+                <div style="background-color:#fff">
+                    <img src="pics/wabash_story_11a.png" 
+                            onmouseover="this.src='pics/wabash_story_11b.png'" 
+                            onmouseout="this.src='pics/wabash_story_11a.png'">
+                    <p><br>They follow the sign all the way to the 7th floor of Macy's where they find the Chocolate Chicago,
+                        <br>a small scall of Chicago made with chocolate by artists. Haley take a picture of all those sweets.
+                        <br>and it also reminds them to treat themselves since they are all tired. </p>
+                    <div class="box-blank"></div>
+                </div>
+                <!--SCENE 06 CAFE-->
+                <div class="box-blank"></div>
+                <p align="center"><em>SCENE 06</em></p>
+                <img src="pics/wabash_line.png">
+                <div class="box-blank"></div>
+                <div style="background-color:#fff">
+                    <div style="position: relative;">
+                        <div style="position: absolute;"> 
+                            <img src="pics/wabash_story_12b.png"/> 
+                        </div>  
+                        <img src="pics/wabash_story_12a.gif"/>
+                    </div>
+                    <p><br>They follow the clue to a 2nd floor cafe where there are food, drinks, seats, games and free wifi.
+                        <br>What's adding to it is the great view to the train
+                        <br>Oscar and Carrie take a seat, have a coffee and enjoy the sunshine of afternoon,
+                        <br>while Haley is busying retouching all her pictures today which she will show off on Instagram.</p> 
+                        
+                    <div class="box-blank"></div>
+                </div>
+            </div>
+
+            <!--System-->
+            <div class="container-fluid"> 
+                <div id="item7" class="box-blank"></div>
+                <h2>System</h2>
+                <div class="box-blank"></div>  
+                <div class="row" style="padding-left:10px;padding-right:12px;">
+                    <div class="col-xs-6 col-md-4" style="background:#a1bb1c;height:300px;opacity:0.7;">
+                        <p class="reverse"><br><br>PHASE 01</p>
+                        <h3 class="reverse" align="center">Existing <br> Businesses</h3>
+                        <p class="reverse"><br><br>Engage students and local Artists</p>
+                    </div>
+                    <div class="col-xs-6 col-md-4" style="background:#a1bb1c;height:300px;opacity:0.8;">
+                        <p class="reverse"><br><br>PHASE 02</p>
+                        <h3 class="reverse" align="center">NEW <br> Businesses</h3>
+                        <!--<p class="reverse"><br><br>Engage students and local Artists</p>-->
+                    </div> 
+                    <div class="col-xs-6 col-md-4" style="background:#a1bb1c;height:300px;opacity:1;">
+                        <p class="reverse"><br><br>PHASE 03</p>
+                        <h3 class="reverse" align="center">Multiple <br> Sponsers</h3>
+                        <p class="reverse"><br><br>Periodically changing themes
+                            <br>Professional Artists and Cultural Institutions
+                            <br>Virtual Technology augmented experience</p>
+                    </div> 
+                </div>                         
+            </div>
+            <div class="box-blank"></div> 
+            <div class="box-blank"></div>              
+        </div>
+    </div>
+
+    <div class="container container-bottom"> 
+        <div class="box-blank"></div>
+        <div class="box-blank"></div>    
+        <div class="row" align="center">
+            <a href="http://www.facebook.com/yenan.lin.18">
+                <img id="link" src="pics/logo_facebook.png">
+            </a>
+            <a href="https://www.linkedin.com/in/sophielynnn/?locale=en_US">
+                <img id="link" src="pics/logo_linkedin.png">
+            </a>
+            <a href="https://github.com/sophielynn/sophielynn.github.io">
+                <img id="link" src="pics/logo_github.png">
+            </a>
+            <a href="mailto:ylin89@id.iit.edu">
+                <img id="link" src="pics/logo_email.png">
+            </a>
+        </div>
+        
+        <div class="row" align="center">
+            <h4>© 2017 Yenan Lin all rights reserved</h4>
+        </div>
+        <div class="box-blank"></div> 
+         
+    </div>
+
+    <script src="assets/js/script.js"></script> 
+	<script src="assets/js/main.js"></script>
+    <script src="assets/js/scroll.js"></script> 
+
+</body>

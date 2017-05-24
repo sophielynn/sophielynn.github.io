@@ -1,0 +1,134 @@
+body{
+        -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+}    
+ 
+header{
+    text-align: left;
+    line-height:60px;
+    margin-top: 0px;
+    padding-top: 300px;
+    padding-left: 130px;
+    height: 500px;
+    background:url("../../pics/cover2.png");
+    color: #fff;
+    font-family: 'PT Sans', sans-serif;
+
+    /*-webkit-transition: all 1s ease;
+    transition: all 1s ease;*/
+}
+
+header.sticky {
+    position: fixed;
+    line-height: 48px;
+    margin-top: 0px;
+    height: 80px;
+    width: 100%;
+    color: #fff;
+    text-align: left;
+    padding-top: 4px;
+    padding-left: 130px;
+    z-index: 1;
+    opacity:0.7;
+}
+
+header #mainhead{
+    font-size: 50px;
+}
+header.sticky #mainhead{
+    font-size: 32px;
+}
+
+#subhead{
+    /*font-family:Georgia, 'Times New Roman', Times, serif;*/
+    font-size: 24px;
+}
+
+p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+p.info{
+    font-size: 80%;
+}
+
+p em{
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+p.info em{
+    font-size: 125%;
+    text-transform: none;
+}
+
+.reverse{
+    color: #fff;   
+    text-transform: uppercase;
+    align:center;
+}
+
+h2{
+    font-size: 32px;
+    font-family: 'PT Sans', sans-serif;
+}
+
+h3{
+    color: #444;
+    font-size: 24px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h4{
+    color:white;
+    font-size: 10px;
+    margin-top:70px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+#Ubax{
+    position: relative;
+    top:40px;
+}
+
+main.sticky{
+    position: fixed;
+    margin-top: 300px;
+}
+
+.box-blank{
+    height: 50px;
+    width: 100%;
+}
+
+img{
+    width: 100%;
+}
+
+.container{
+    background-image: none;
+    background-color: #eeeeee;
+    width: 100%;
+    align-content: center;
+    padding-left:5%;
+    padding-right:5%;
+}
+
+.container.container-bottom{
+    background-image: none;
+    width: 100%;
+    align-content: center;
+    padding-left:5%;
+    padding-right:5%;
+}
+
+#link{      
+    padding-left:55px; 
+    padding-right:55px;
+    width: 140px;   
+}
+
+#item1{
+    position: relative;
+}
+
