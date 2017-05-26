@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Yenan's Site</title>
+    <link rel="bookmark" type="image/x-icon" href="pics/logo_400.png"/>
+    <link rel="shortcut icon" href="pics/logo_160.png">
+    <link rel="icon" href="pics/logo_160.png">
+    <!--jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <!--side menu effect  -->
+    <link rel="stylesheet" type="text/css" href="assets/css/component_branch.css"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="assets/css/style_branch.css">
+    <style>
+        header{
+            background:url("pics/cover_baios.png");
+            background-size:100%;
+        }
+        header.sticky,.container.container-bottom,.nav--ubax .nav__item--current::after{
+            background:#64a975;
+        }
+        p em, h2{
+            color: #64a975;
+        }
+    </style>
+
+</head>
+<body>
+
+    <header>
+        <h1 id="mainhead">BAIOS</h1>
+        <h1 id="subhead"> A design planning project of launching an idea to the real market. </h1>
+    </header>
+
+    <div class="container">
+        <div class="box-blank"></div>
+        <div class="box-blank" id="item1"></div> 
+
+        <div id="left" class="col-xs-6 col-md-3">
+            <div class="col-xs-6 col-md-10 col-md-offset-1">
+                <div><p class="info">Topic source<br><em>2017 S, Intro to Design Planning, Institute of Design</em></p></div>
+                <div><p class="info">Advisor<br><em>Larry Keeley</em></p></div>
+                <div><p class="info">Teammates<br><em>Renee Albrecht-Mallinger, Ketshi Bavishi, Jinjia Huang, Xuanbai Liu</em></p></div>
+                <div><p class="info">Project Length<br><em>14-week Workshop</em></p></div>
+            </div>
+            <main>
+                <section class="section section--nav" id="Ubax">
+                    <span class="link-copy"></span>
+                    <nav class="nav nav--ubax">
+                        <button class="nav__item nav__item--current" aria-label="Item 1" onclick="scroller('item1', 500)"><span class="nav__item-title">Design Brief</span></button>
+                        <button class="nav__item" aria-label="Item 2" onclick="scroller('item2', 500)"><span class="nav__item-title">Overview</span></button>
+                        <button class="nav__item" aria-label="Item 3" onclick="scroller('item3', 500)"><span class="nav__item-title">Business Idea</span></button>
+                        <button class="nav__item" aria-label="Item 4" onclick="scroller('item4', 500)"><span class="nav__item-title">Roll-out Strategy</span></button>
+                        <button class="nav__item" aria-label="Item 5" onclick="scroller('item5', 500)"><span class="nav__item-title">System</span></button>
+                        <button class="nav__item" aria-label="Item 6" onclick="scroller('item6', 500)"><span class="nav__item-title">Appendix</span></button>
+                        <div class="box-blank"></div>
+                        <button class="nav__item" aria-label="Item 9" onclick="javascript:window.location.href='index.html#pos' "><span class="nav__item-title linktopage">HOME</span></button>
+                        <button class="nav__item" aria-label="Item 10" onclick="javascript:window.location.href='kb.html' "><span class="nav__item-title linktopage">NEXT</span></button>
+                    </nav>
+                </section>		
+            </main>
+        </div>
+
+        
+        <div id="right" class="col-xs-12 col-md-8 col-md-offset-0">
+            <!--Design Brief-->
+            <div class="container-fluid"> 
+                <h2>Design Brief</h2>
+                <div class="box-blank"></div>                
+                <div class="row">
+                    <div class="col-xs-18 col-md-12" style="background-color:#fff;height:120px;">
+                        <h3>Ecology is important.</h3>
+                        <h3>How can we get young people interested and involved?</h3>  
+                    </div>
+                    <div class="col-xs-18 col-md-6" style="height:180px;;">
+                        <p><br>Our environment is changing rapidly and at a grand scale. 
+                            Tools for understanding and developing new knowledge about the environment 
+                            are more important than ever, and experiential learning is a critical 
+                            ingredient in environmental education. <em>[NEEF 2015]</em> When learners are active 
+                            participants in their education, they perform better than they do in 
+                            more passive learning environments.<em>[Freeman 2014]</em></p>
+                    </div> 
+                    <div class="col-xs-18 col-md-12">
+                        <p class="info">1 NEEF. (2015) Environmental Literacy in the United States: An Agenda for Leadership in the 21st Century. Washington, DC: National Environmental Education Foundation.
+                            <br>2. Freeman, Scott, Sarah L. Eddy, Miles McDonough, Michelle K. Smith, Nnadozie Okoroafor, Hannah Jordt, and Mary Pat Wenderoth. “Active Learning Increases Student Performance in Science, Engineering, and Mathematics.” Proceedings of the National Academy of Sciences 111, no. 23 (June 10, 2014): 8410–15. doi:10.1073/pnas.1319030111.</p>
+                    </div>
+                </div>                           
+            </div>
+
+            <!--Overview-->
+            <div class="container-fluid"> 
+                <div id="item2" class="box-blank"></div>
+                <h2>Overview of our Solution</h2>
+                <div class="box-blank"></div>
+                <iframe src="https://player.vimeo.com/video/216234766?autoplay=1&color=ffffff&portrait=0" width="840" height="473" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<p><a href="https://vimeo.com/216234766">Baios_VR Exploration of Ecology and the Connectedness of Ecosystem</a> from <a href="https://vimeo.com/user55486413">Sophie Lynn</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+                <h3></h3>      
+            </div>
+                
+            <!--Business Idea-->
+            <div class="container-fluid"> 
+                <div id="item3" class="box-blank"></div>
+                <h2>Business Idea</h2>
+                <!--<div class="box-blank"></div>-->
+                <div class="row">
+                    <div class="col-xs-18 col-md-6">
+                        <h3>Current solutions fall short.</h3>
+                        <p><br>We can do better than the traditional methods for helping young people 
+                            to explore ecology. Using these current tools, the process of discovery, research, creation, 
+                            and sharing involves separate phases across several unintegrated platforms:</p>
+                    </div>                    
+                </div>
+                <hr align="left" style=" height:2px;width:100%;border-top:2px solid #64a975;" />
+                <div class="row">                    
+                    <div class="col-xs-9 col-md-3">
+                        <p><em>Tools for discovery and research</em></p>
+                    </div>
+                    <div class="col-xs-9 col-md-9">
+                        <div class="col-xs-6 col-md-4">
+                            <p><em>Textbooks</em> lack the interactivity that users have come to expect from learning tools.</p>
+                        </div>
+                        <div class="col-xs-6 col-md-4">
+                            <p><em>Documentaries</em> may generate interest, but they facilitate mostly passive learning.</p>
+                        </div>
+                        <div class="col-xs-6 col-md-4">
+                            <p><em>Online research</em> quality is variable. The information may simply be the “computer screen” version of a textbook or a documentary.</p>
+                        </div>
+                        <div class="col-xs-6 col-md-4">
+                            <p><em>A lecture</em> proceeds in a linear fashion and has limited opportunity for participation.</p>
+                        </div>
+                        <div class="col-xs-6 col-md-4">
+                            <p><em>Labs and field trips</em> are limited by what is close by and affordable.</p>
+                        </div>
+                    </div>                    
+                </div>
+                <hr align="left" style=" height:2px;width:75%;border-top:2px solid #64a975;" />
+                <div class="row">                                          
+                    <div class="col-xs-9 col-md-3">
+                        <p><em>Tools for creating and sharing</em></p>
+                    </div>
+                    <div class="col-xs-9 col-md-9">
+                        <div class="col-xs-6 col-md-4">
+                            <p><em>A slide deck or report</em> is a static document.</p>
+                        </div>
+                        <div class="col-xs-6 col-md-4">
+                            <p><em>A science fair project</em> limits ecological projects to materials and locations close at hand.</p>
+                        </div>
+                    </div>                    
+                </div>
+                <div class="box-blank"></div>
+                <div align="center" style="background-color:#64a975;height:200px;">
+                    <img src="pics/baios_logo.png" style="padding-top:30px;width:50%;">
+                </div>
+                <div class="box-blank"></div>
+                
+                <div class="row">
+                    <div class="col-xs-18 col-md-4">
+                        <div class="row" style="background-color:#fff;height:110%;">
+                            <div class="col-xs-18 col-md-12">
+                                <h3>A Virtual Reality platform that facilitates the exploration of ecology and the connectedness of ecosystems.</h3>
+                            </div>
+                            <div class="col-xs-18 col-md-12">
+                                <p><br>Unlike current tools, BAIOS empowers explorers to <em>chart their own journey</em> and to <em>browse 
+                                    author vivid content</em> using compelling media and high-quality data and to <em>share their own content</em> 
+                                    with a global community—all in a single platform.</p>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="col-xs-18 col-md-8">
+                        <div class="row" style="padding:12px;">
+                            <div class="col-xs-18 col-md-6">
+                                <p><em>Explore an ecosystem in VR.</em></p>
+                                <p>Using media from top-quality content providers like BBC, visit a whole new world. Use a gesture-based browsing system to investigate further without leaving the environment.</p>
+                            </div>
+                            <div class="col-xs-18 col-md-6">
+                                <p><em>Learn from experts.</em></p>
+                                <p>Experiment with data visualizations crafted by leading scientists to learn about how different factors in the ecosystem are connected.</p>
+                            </div>
+                        </div>
+                        <div class="row" style="padding:12px;">
+                        <div class="col-xs-18 col-md-6">
+                            <p><em>Create your own visualization.</em></p>
+                            <p>Select quantitative information related to the ecosystem and use data visualization software to build knowledge for yourself and maybe even discover something new.</p>
+                        </div>
+                        <div class="col-xs-18 col-md-6">
+                            <p><em>Publish and share.</em></p>
+                            <p>Save your work and publish to the global BAIOS library, where others can learn from your visualizations.</p>
+                        </div>
+                        </div> 
+                    </div>                   
+                </div>
+                <div class="box-blank"></div>
+                <hr align="left" style=" height:2px;width:100%;border-top:2px solid #64a975;" />
+                <div class="row">
+                    <div class="col-xs-18 col-md-4">
+                        <img src="pics/baios_prototype_1.jpg">
+                        <h3></h3>
+                        <p><em>Explore the environment</em></p>
+                        <p>By using different filters, users can observe and explore the ecosystem from different point of view. They can be more focused on the contents they are interested.</p>
+                    </div>
+                    <div class="col-xs-18 col-md-4">
+                        <img src="pics/baios_prototype_2.jpg">
+                        <h3></h3>
+                        <p><em>Collect the data</em></p>
+                        <p>All data in the environment, including text, picture, chart, video, and 3D model, can be grabbed and collected to users’ inventory for further usage.</p>
+                    </div>
+                    <div class="col-xs-18 col-md-4">
+                        <img src="pics/baios_prototype_3.jpg">
+                        <h3></h3>
+                        <p><em>Create your own piece</em></p>
+                        <p>With all the data collected, users can create their own artifacts in the VR environment. They could be posters, slides, video or even VR show rooms.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--Roll-out Strategy-->
+            <div class="container-fluid"> 
+                <div id="item4" class="box-blank"></div>
+                <h2>Roll-out Strategy</h2>
+                <h3><br>The <img src="pics/baios_logo2.png" style="width:90px;"> Competition</h3>
+                <h3></h3>
+                <div class="row" align="center" style="background-color:#fff;padding-top:20px;padding-bottom:10px;">
+                    <div class="col-xs-9 col-md-6">
+                        <img src="pics/baios_competition_1.png" style="width:175px;padding:20px;">
+                        <p align="left">BAIOS will hold an annual competition for middle- and high- school aged students who are interested in learning more about ecology. Students will respond to a challenge question related to a topic in ecology that’s important in current events with a visualization. </p>
+                    </div>
+                    <div class="col-xs-9 col-md-6">
+                        <img src="pics/baios_competition_2.png" style="width:140px;padding:20px;">
+                        <p align="left">The competition winners receive scholarships to pursue STEM (science, technology, engineering, and mathematics) careers in college.  </p>
+                    </div>
+                </div>
+                <div class="box-blank"></div>
+                <h3>Scenario</h3>
+                <hr align="left" style=" height:2px;width:100%;border-top:2px solid #64a975;" />                
+                <div class="row">
+                    <div class="col-xs-9 col-md-4 col-md-offset-1">
+                        <p style="padding-top:60px;">Sonia is doing homework in her local library, where she encounters a BAIOS booth. 
+                            There, she tries on a headset and browses a library of professionally designed explorations.</p>
+                    </div>
+                    <div class="col-xs-9 col-md-6">
+                        <img src="pics/baios_scenario_1.png">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-9 col-md-4 col-md-offset-1">
+                        <p style="padding-top:60px;">A few days later, Sonia sees a sign near her locker: her school has a BAIOS team! 
+                            They are responding to this year’s BAIOS challenge: “What does 2 degrees really mean?”</p>
+                    </div>
+                    <div class="col-xs-9 col-md-6">
+                        <img src="pics/baios_scenario_2.png">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-9 col-md-4 col-md-offset-1">
+                        <p style="padding-top:60px;">Sonia joins the team and works with other students. 
+                            They visit different ecosystems across the globe, experiment with data, and craft a data visualization for their submission.</p>
+                    </div>
+                    <div class="col-xs-9 col-md-6">
+                        <img src="pics/baios_scenario_3.png">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-9 col-md-4 col-md-offset-1">
+                        <p style="padding-top:60px;">A panel of judges reviews entries from all over the globe, and Sonia’s team is selected to win! 
+                            Each team member receives a scholarship to pursue a science-related major at a prestigious university.</p>
+                    </div>
+                    <div class="col-xs-9 col-md-6">
+                        <img src="pics/baios_scenario_4.png">
+                    </div>
+                </div>
+                <hr align="left" style=" height:2px;width:100%;border-top:2px solid #64a975;margin-top:-20px;" />   
+            </div>
+
+            <!--System-->
+            <div class="container-fluid"> 
+                <div id="item5" class="box-blank"></div>
+                <h2>System</h2>
+                <!--<div class="box-blank"></div>                  -->
+                <h3></h3>
+                <div class="row" align="center" style="background-color:#fff;padding-top:20px;padding-bottom:30px;">
+                    <div class="col-xs-18 col-md-12">
+                        <h3 align="left">User Groups</h3>
+                        <h3></h3>
+                    </div>                    
+                    <div class="col-xs-9 col-md-3 col-md-offset-2">
+                        <img src="pics/baios_user_1.png" style="width:140px;padding:20px;">
+                        <p><em>High school Students</em></p>
+                    </div>
+                    <div class="col-xs-9 col-md-3 col-md-offset-2">
+                        <img src="pics/baios_user_2.png" style="width:140px;padding:20px;">
+                        <p><em>General Public</em></p>
+                    </div>
+                </div>
+                <h3></h3>
+                <div class="row" align="center" style="padding-bottom:10px;">
+                    <div class="col-xs-18 col-md-12">
+                        <h3 align="left">User Experience</h3>
+                        <h3></h3>
+                    </div>                    
+                    <div class="col-xs-9 col-md-3">
+                        <img src="pics/baios_experience_1.png" style="width:140px;padding:20px;">
+                        <p><em>Explore an ecosystem<br> in VR</em></p>
+                    </div>
+                    <div class="col-xs-9 col-md-3">
+                        <img src="pics/baios_experience_2.png" style="width:140px;padding:20px;">
+                        <p><em>Learn from experts</em></p>
+                    </div>
+                    <div class="col-xs-9 col-md-3">
+                        <img src="pics/baios_experience_3.png" style="width:140px;padding:20px;">
+                        <p><em>Create your own visualization</em></p>
+                    </div>
+                    <div class="col-xs-9 col-md-3">
+                        <img src="pics/baios_experience_4.png" style="width:140px;padding:20px;">
+                        <p><em>Publish and share</em></p>
+                    </div>
+                </div>
+                <h3></h3>
+                <div class="row" align="center" style="background-color:#fff;padding-top:20px;padding-bottom:30px;">
+                    <div class="col-xs-18 col-md-12">
+                        <h3 align="left">Offering</h3>
+                        <h3></h3>
+                    </div>                    
+                    <div class="col-xs-9 col-md-3">
+                        <img src="pics/baios_offering_1.png" style="width:140px;padding:20px;">
+                        <p><em>Immersive experience</em></p>
+                    </div>
+                    <div class="col-xs-9 col-md-4 col-md-offset-1">
+                        <img src="pics/baios_offering_2.png" style="width:140px;padding:20px;">
+                        <p><em>Data library</em></p>
+                    </div>
+                    <div class="col-xs-9 col-md-3 col-md-offset-1">
+                        <img src="pics/baios_offering_3.png" style="width:140px;padding:20px;">
+                        <p><em>VR workspace</em></p>
+                    </div>
+                </div>    
+                <h3></h3> 
+                <div class="row" align="center" style="padding-bottom:10px;">
+                    <div class="col-xs-18 col-md-12">
+                        <h3 align="left">Partnership : Content</h3>
+                        <h3></h3>
+                    </div>                    
+                    <div class="col-xs-9 col-md-3">
+                        <img src="pics/baios_partner_content_1.png" style="width:140px;padding:20px;">
+                        <p><em>Government organizations</em></p>
+                    </div>
+                    <div class="col-xs-9 col-md-4 col-md-offset-1">
+                        <img src="pics/baios_partner_content_2.png" style="width:140px;padding:20px;">
+                        <p><em>Media &amp; other interested companies</em></p>
+                    </div>
+                    <div class="col-xs-9 col-md-3 col-md-offset-1">
+                        <img src="pics/baios_partner_content_3.png" style="width:140px;padding:20px;">
+                        <p><em>Museums &amp; educational institutions</em></p>
+                    </div>
+                </div>    
+                <h3></h3>  
+                <div class="row" align="center" style="background-color:#fff;padding-top:20px;padding-bottom:30px;">
+                    <div class="col-xs-18 col-md-12">
+                        <h3 align="left">Partnership : Financial</h3>
+                        <h3></h3>
+                    </div>                    
+                    <div class="col-xs-9 col-md-3">
+                        <img src="pics/baios_partner_financial_1.png" style="width:140px;padding:20px;">
+                        <p><em>Corporate sponsors</em></p>
+                    </div>
+                    <div class="col-xs-9 col-md-3">
+                        <img src="pics/baios_partner_financial_2.png" style="width:140px;padding:20px;">
+                        <p><em>Charitable foundations</em></p>
+                    </div>
+                    <div class="col-xs-9 col-md-3">
+                        <img src="pics/baios_partner_financial_3.png" style="width:140px;padding:20px;">
+                        <p><em>Educational institutions</em></p>
+                    </div>
+                    <div class="col-xs-9 col-md-3">
+                        <img src="pics/baios_partner_financial_4.png" style="width:140px;padding:20px;">
+                        <p><em>Nonprofits</em> <br> like NASA, NOAA, and other groups </em></p>
+                    </div>
+                </div>
+                <h3></h3> 
+                <div class="row" align="center" style="padding-bottom:10px;">
+                    <div class="col-xs-18 col-md-12">
+                        <h3 align="left">Partnership : Technology</h3>
+                        <h3></h3>
+                    </div>                    
+                    <div class="col-xs-9 col-md-3 col-md-offset-2">
+                        <img src="pics//baios_partner_tech_1.png" style="width:140px;padding:20px;">
+                        <p><em>Data visualization softwares and applications</em> which works with media from library </p>
+                    </div>
+                    <div class="col-xs-9 col-md-3 col-md-offset-2">
+                        <img src="pics//baios_partner_tech_2.png" style="width:140px;padding:20px;">
+                        <p><em>VR System</em> A hardware and software of system which plays interactive VR video</p>
+                    </div>
+                </div>                  
+            </div> 
+
+            <!--Appendix-->
+            <div class="container-fluid"> 
+                <div id="item6" class="box-blank"></div>
+                <h2>Appendix</h2>
+                <h3><br>Ten Types of Innovation</h3> 
+                <h3></h3>
+                <img src="pics//baios_system_1.png"> 
+                <h3>Business Model</h3> 
+                <img src="pics//baios_system_2.png">   
+            </div>
+            <div class="box-blank"></div> 
+            <div class="box-blank"></div>                   
+        </div>
+    </div>
+
+    <div class="container container-bottom"> 
+        <div class="box-blank"></div>
+        <div class="box-blank"></div>    
+        <div class="row" align="center">
+            <a href="http://www.facebook.com/yenan.lin.18">
+                <img id="link" src="pics/logo_facebook.png">
+            </a>
+            <a href="https://www.linkedin.com/in/sophielynnn/?locale=en_US">
+                <img id="link" src="pics/logo_linkedin.png">
+            </a>
+            <a href="https://github.com/sophielynn/sophielynn.github.io">
+                <img id="link" src="pics/logo_github.png">
+            </a>
+            <a href="mailto:ylin89@id.iit.edu">
+                <img id="link" src="pics/logo_email.png">
+            </a>
+        </div>
+        
+        <div class="row" align="center">
+            <h4>© 2017 Yenan Lin all rights reserved</h4>
+        </div>
+        <div class="box-blank"></div> 
+         
+    </div>
+
+    <script src="assets/js/script.js"></script> 
+	<script src="assets/js/main.js"></script>
+    <script src="assets/js/scroll.js"></script> 
+
+</body>
