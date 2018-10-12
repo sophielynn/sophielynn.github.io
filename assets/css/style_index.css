@@ -3,7 +3,7 @@ body, html, main {
 }
 
 body{
-    background:url("../../pics/cover2.png");
+    /* background:url("../../pics/cover2.png"); */
     filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale')";
     min-height: 100%;
     background-size: cover;
@@ -13,7 +13,7 @@ body{
 }
 
 h1{
-    color:#774cfd;
+    color:#3446a2;
     /*color:white;*/
     text-align: left;
     vertical-align: bottom;
@@ -23,7 +23,8 @@ h1{
 }
 
 h2{
-   font-family: 'PT Sans', sans-serif;
+   font-family: 'Ubuntu', sans-serif;
+   line-height: 36px;
 }
 
 h4{
@@ -31,6 +32,14 @@ h4{
     font-size: 10px;
     margin-top:70px;
     font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+p{
+    font-family: 'Muli', sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 300;
+    
 }
 
 #maintitle{    
@@ -93,7 +102,7 @@ h4{
 
 .container.container-bottom{
     background-image: none;
-    background-color: #774cfd;
+    background-color: #3446a2;
     width: 100%;
     align-content: center;
     padding-left:5%;

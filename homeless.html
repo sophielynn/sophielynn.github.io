@@ -1,449 +1,602 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Yenan's Site</title>
-    <link rel="bookmark" type="image/x-icon" href="pics/logo_400.png"/>
+    <link rel="bookmark" type="image/x-icon" href="pics/logo_400.png" />
     <link rel="shortcut icon" href="pics/logo_160.png">
     <link rel="icon" href="pics/logo_160.png">
     <!--jquery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
 
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- Optional JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
 
     <!--side menu effect  -->
-    <link rel="stylesheet" type="text/css" href="assets/css/component_branch.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/component_branch.css" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="assets/css/style_branch.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Muli:300,400,600|Ubuntu" rel="stylesheet">
     <style>
-        header{
-            background:url("pics/cover_homeless.png");
-            background-size:100%;
+        body {
+            background-color: #f2f2f2;
         }
-        header.sticky,.container.container-bottom,.nav--ubax .nav__item--current::after{
-            background:#1072bb;
+
+        header {
+            background: url("pics/cover_homeless.png");
+            background-size: 100%;
         }
-        p em, h2{
+
+        header.sticky,
+        .container-fluid.container-bottom,
+        .nav--ubax .nav__item--current::after {
+            background: #1072bb;
+        }
+
+        p em,
+        h2 {
             color: #1072bb;
+        }
+
+        .left-margin {
+            border-left-color: #1072bb;
         }
     </style>
 
 </head>
+
 <body>
 
     <header>
         <h1 id="mainhead">Homelessness Prevention</h1>
-        <h1 id="subhead"> How can we deliver services to prevent post-homeless from experiencing homeless again 
+        <h1 id="subhead"> How can we deliver services to prevent post-homeless from experiencing homeless again
             in a data-driven thought frame? </h1>
     </header>
 
-    <div class="container">
+    <div class="container-fluid">
+
         <div class="box-blank"></div>
-        <div class="box-blank" id="item1"></div> 
+        <div class="box-blank" id="item1"></div>
 
-        <div id="left" class="col-xs-6 col-md-3">
-            <div class="col-xs-6 col-md-10 col-md-offset-1">
-                <div><p class="info">Topic source<br><em>2017 F, Data Driven Service Design, Institute of Design</em></p></div>
-                <div><p class="info">Advisor<br><em>Mark Faga, Annie Conway</em></p></div>
-                <div><p class="info">Teammates<br><em>Shangyanyan Li, Yachu(Charlie) Feng</em></p></div>
-                <div><p class="info">Project Length<br><em>14-week Workshop</em></p></div>
-            </div>
-            <main>
-                <section class="section section--nav" id="Ubax">
-                    <span class="link-copy"></span>
-                    <nav class="nav nav--ubax">
-                        <button class="nav__item nav__item--current" aria-label="Item 1" onclick="scroller('item1', 500)"><span class="nav__item-title">Design Brief</span></button>
-                        <button class="nav__item" aria-label="Item 2" onclick="scroller('item2', 500)"><span class="nav__item-title">User Research</span></button>
-                        <button class="nav__item" aria-label="Item 3" onclick="scroller('item3', 500)"><span class="nav__item-title">Data Research</span></button>
-                        <button class="nav__item" aria-label="Item 4" onclick="scroller('item4', 500)"><span class="nav__item-title">Hypothesis &amp; Analysis</span></button>
-                        <button class="nav__item" aria-label="Item 5" onclick="scroller('item5', 500)"><span class="nav__item-title">Synthesis &amp; Solution</span></button>
-                        <button class="nav__item" aria-label="Item 6" onclick="scroller('item6', 500)"><span class="nav__item-title">Feedback</span></button>
-                        <!-- <button class="nav__item" aria-label="Item 7" onclick="scroller('item7', 500)"><span class="nav__item-title">Feedback</span></button> -->
-                        <div class="box-blank"></div>
-                        <button class="nav__item" aria-label="Item 9" onclick="javascript:window.location.href='index.html#pos' "><span class="nav__item-title linktopage">HOME</span></button>
-                        <button class="nav__item" aria-label="Item 10" onclick="javascript:window.location.href='baios.html' "><span class="nav__item-title linktopage">NEXT</span></button>
-                    </nav>
-                </section>		
-            </main>
-        </div>
-
-        
-        <div id="right" class="col-xs-12 col-md-8 col-md-offset-0">
-            <!--Design Brief-->
-            <div class="container-fluid"> 
-                <h2>Design Brief</h2>
-                <h3></h3>
-                <div class="row">
-                    <div class="col-xs-8 col-md-7">                           
-                        <p><br>Homelessness is a persistent problem in Chicago. Homelessness is defined as an individual 
-                            who does not have a fixed, regular or adequate night time residence. 
-                            Chicago’s Department of Family and Support Services (DFSS) operates numerous shelters and programs 
-                            to support the homeless, as well as emergency rental assistance and other services 
-                            to prevent those at risk from becoming homeless. 
-                            Nevertheless, thousands of individuals and families every year experience financial and other emergencies 
-                            and lose their housing. So in this project,</p>
+        <div class="row">
+            <div id="left" class="col-xs-6 col-md-3">
+                <div class="col-xs-6 col-md-10 col-md-offset-2">
+                    <div>
+                        <p class="info">&Iota; &nbsp;TOPIC SOURCE<br><em>2017 F, Data Driven Service Design, <br> IIT
+                                Institute of Design</em></p>
                     </div>
-                    <div class="col-xs-8 col-md-5"> 
-                        <h3 style="color:#1072bb">How might we deliver smarter social services to predict and identify Chicago residents 
-                                at risk of becoming homeless and target them for preventative interventions using data?</h3>
+                    <div>
+                        <p class="info">&Iota; &nbsp;ADVISOR<br><em>Mark Faga, Annie Conway</em></p>
+                    </div>
+                    <div>
+                        <p class="info">&Iota; &nbsp;TEAMMATES<br><em>Shangyanyan Li, Yachu(Charlie) Feng</em></p>
+                    </div>
+                    <div>
+                        <p class="info">&Iota; &nbsp;PROJECT LENGTH<br><em>14-week Workshop</em></p>
                     </div>
                 </div>
-                <h3></h3>
-                <h3>Thought Frame</h3>                
-                <div class="row">
-                    <div class="col-xs-8 col-md-5">
-                        <p>In this project, we are not only looking at the user side, but also data available in the system. 
-                            So we combine qualitative research and quantitative research to think about 
-                            how might we deliver smarter social services to predict and identify Chicago residents 
-                            at risk of becoming homeless and target them for preventative interventions. 
-                            Those two types of research can inform each other and deliver better solutions 
-                            which incorporate both user needs and system capabilities.</p>
-                    </div>
-                    <div class="col-xs-16 col-md-7" align="center">
-                        <img src="pics/homeless_problem.png">
-                    </div>
-                </div>           
+                <main class="d-none d-md-block">
+                    <section class="section section--nav" id="Ubax">
+                        <span class="link-copy"></span>
+                        <nav class="nav nav--ubax">
+                            <button class="nav__item nav__item--current" aria-label="Item 1" onclick="scroller('item1', 500)"><span
+                                    class="nav__item-title">Design Brief</span></button>
+                            <button class="nav__item" aria-label="Item 2" onclick="scroller('item2', 500)"><span class="nav__item-title">User
+                                    Research</span></button>
+                            <button class="nav__item" aria-label="Item 3" onclick="scroller('item3', 500)"><span class="nav__item-title">Data
+                                    Research</span></button>
+                            <button class="nav__item" aria-label="Item 4" onclick="scroller('item4', 500)"><span class="nav__item-title">Hypothesis
+                                    &amp; Analysis</span></button>
+                            <button class="nav__item" aria-label="Item 5" onclick="scroller('item5', 500)"><span class="nav__item-title">Synthesis
+                                    &amp; Solution</span></button>
+                            <button class="nav__item" aria-label="Item 6" onclick="scroller('item6', 500)"><span class="nav__item-title">Feedback</span></button>
+                            <!-- <button class="nav__item" aria-label="Item 7" onclick="scroller('item7', 500)"><span class="nav__item-title">Feedback</span></button> -->
+                            <div class="box-blank"></div>
+                            <button class="nav__item" aria-label="Item 9" onclick="javascript:window.location.href='index.html#pos' "><span
+                                    class="nav__item-title linktopage">HOME</span></button>
+                            <button class="nav__item" aria-label="Item 10" onclick="javascript:window.location.href='baios.html' "><span
+                                    class="nav__item-title linktopage">NEXT</span></button>
+                        </nav>
+                    </section>
+                </main>
             </div>
 
-            <!--User Research-->
-            <div class="container-fluid"> 
-                <div id="item2" class="box-blank"></div>
-                <h2>User Research</h2>
-                <h3></h3>
-                <p>We visited multiple shelters, service providers, 311 call center and talked with both staff members 
-                    and shelter guests to learn their experiences along the journey and when the data is being collected and used.</p>
-                <h3></h3>
-                <div class="row">
-                    <div class="col-xs-6 col-md-4">
-                        <p><em>SITE VISIT AND OBSERVATION</em></p>
-                        <img src="pics/homeless_userresearch_1.png" class="img-responsive" style="height:150%;">
+
+            <div id="right" class="col-xs-12 col-md-8 col-md-offset-0">
+
+                <!--Design Brief-->
+                <div class="container-fluid" style="padding:20px 0px 0px 0px;">
+                    <h2>DESIGN BRIEF</h2>
+                    <h2 style="font-weight: 900;">&mdash;</h2>
+                    <div class="row" style="padding:30px 0 30px 0;">
+                        <div class="col-xs-8 col-md-8">
+                            <p>Homelessness is a persistent problem in Chicago. Homelessness is defined as an
+                                individual
+                                who does not have a fixed, regular or adequate night time residence.
+                                Chicago’s Department of Family and Support Services (DFSS) operates numerous shelters
+                                and programs
+                                to support the homeless, as well as emergency rental assistance and other services
+                                to prevent those at risk from becoming homeless.
+                                Nevertheless, thousands of individuals and families every year experience financial and
+                                other emergencies
+                                and lose their housing. So in this project,</p>
+                        </div>
                     </div>
-                    <div class="col-xs-6 col-md-4">
-                        <p><em>STAKEHOLDER INTERVIEW</em></p>
-                        <img src="pics/homeless_userresearch_2.png" class="img-responsive">
+                    <div class="left-margin">
+                        <h3>How might we deliver smarter social services to predict and identify Chicago residents
+                            at risk of becoming homeless and target them for preventative interventions using data?</h3>
                     </div>
-                    <div class="col-xs-6 col-md-3">
-                        <p><em>ARTIFACT COLLECTION</em></p>
-                        <img src="pics/homeless_userresearch_3.png" class="img-responsive">
+                    <div style="padding:30px 0 30px 0;">
+                        <h3>Thought Frame</h3>
                     </div>
-                </div>
-                <h3>User Journey of Homeless</h3>
-                <h3></h3>
-                <div>
-                    <a href = "files/homeless_userjourney.pdf" target="_blank">
-                        <img src="pics/homeless_userjourney.png" class="img-responsive">
-                    </a>                  
-                </div>   
-                <p><br>After analyzing the data and drawing the journey map with data input and out, 
-                    we find two opportunities to prevent people at high risk become homeless. 
-                    The first one is preventing high risk residents who have never been homeless before, 
-                    and the second one it preventing people who ended homeless status and get permanent housing 
-                    from being homeless again. Our group will focus more on the second situation.</p>  
-                <h3></h3>
-                <h3>Data Flow in the System</h3>
-                <div>
-                    <p>When we are doing data research, we looked at what kinds of data are collected 
-                            along the process and when those data is collected and applied by whom. 
-                            From doing both user research an data research, we find that there are lots of stakeholders 
-                            are involved in this process, and there are complex back-end data systems supporting those process. 
-                            After making the stakeholder map and process map, we have a better sense of how data 
-                            is flowing in the system across different stakeholders along the process</p>
-                </div>
-                <div>
-                    <h3></h3>
-                    <h3>Stakeholder Map</h3>
-                    <img src="pics/homeless_data_01.png">
-                </div>
-                <div>
-                    <h3></h3>
-                    <h3></h3>
-                    <h3>Process Map</h3>
-                    <img src="pics/homeless_data_02.png">
-                </div>
-                <div>
-                    <h3></h3>
-                    <h3>Service Blueprint</h3>
                     <div class="row">
+                        <div class="col-xs-16 col-md-8">
+                            <img src="pics/homeless_problem.png">
+                        </div>
+                        <div class="col-xs-8 col-md-4">
+                            <p>In this project, we are not only looking at the user side, but also data available in
+                                the system.
+                                So we combine qualitative research and quantitative research to think about
+                                how might we deliver smarter social services to predict and identify Chicago residents
+                                at risk of becoming homeless and target them for preventative interventions.
+                                Those two types of research can inform each other and deliver better solutions
+                                which incorporate both user needs and system capabilities.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!--User Research-->
+                <div class="container-fluid" style="padding:50px 0px 0px 0px;">
+                    <div id="item2" class="box-blank"></div>
+                    <h2>USER RESEARCH</h2>
+                    <h2 style="font-weight: 900;">&mdash;</h2>
+                    <div class="row" style="padding:30px 0 0px 0;">
+                        <div class="col-xs-8 col-md-4">
+                            <p>We visited multiple shelters, service providers, 311 call center and talked with both
+                                staff members
+                                and shelter guests to learn their experiences along the journey and when the data is
+                                being collected and used.</p>
+                        </div>
+                        <div class="col-xs-8 col-md-4">
+                            <img src="pics/homeless_userresearch_3.png">
+                            <p class="info"><br>&Iota; &nbsp;Artifact Collection</p>
+                        </div>
+                        <div class="col-xs-8 col-md-4">
+                            <img src="pics/homeless_userresearch_1.png">
+                            <p class="info"><br>&Iota; &nbsp;Site Visit and Observation</p>
+                            <img src="pics/homeless_userresearch_2.png">
+                            <p class="info"><br>&Iota; &nbsp;Stakeholder Interview</p>
+                        </div>
+                    </div>
+
+                    <div style="padding:30px 0 0px 0;">
+                        <h3>User Journey of Homeless</h3>
+                    </div>
+                    <div style="padding:30px 0 0px 0;">
+                        <a href="files/homeless_userjourney.pdf" target="_blank">
+                            <img src="pics/homeless_userjourney.png" class="img-responsive">
+                        </a>
+                    </div>
+                    <div class="row" style="padding:30px 0 30px 0;">
+                        <div class="col-xs-16 col-md-4">
+                            <p>After analyzing the data and drawing the journey map with data input and out,
+                                we find two opportunities to prevent people at high risk become homeless.
+                                The first one is preventing high risk residents who have never been homeless before,
+                                and the second one it preventing people who ended homeless status and get permanent
+                                housing
+                                from being homeless again. Our group will focus more on the second situation.</p>
+                        </div>
+                        <div class="col-xs-16 col-md-8">
+                            <img src="pics/homeless_userjourney_2.png">
+                        </div>
+                    </div>
+                    <div class="left-margin">
+                        <h3>Focus 1: How might we identify people of high risk beforehand and prevent people from
+                            entering the system?</h3>
+                        <h3>Focus 2: How might we identify people of high risk in the process and prevent people from
+                            reentering the system?</h3>
+                    </div>
+
+                    <div style="padding:30px 0 0px 0;">
+                        <h3>Data Flow in the System</h3>
+                    </div>
+                    <div class="row" style="padding:30px 0 0px 0;">
+                        <div class="col-xs-16 col-md-8">
+                            <p>When we are doing data research, we looked at what kinds of data are collected
+                                along the process and when those data is collected and applied by whom.
+                                From doing both user research an data research, we find that there are lots of
+                                stakeholders
+                                are involved in this process, and there are complex back-end data systems supporting
+                                those process.
+                                After making the stakeholder map and process map, we have a better sense of how data
+                                is flowing in the system across different stakeholders along the process</p>
+                        </div>
+                    </div>
+
+                    <div style="padding:30px 0 30px 0;">
+                        <h3>Stakeholder Map</h3>
+                    </div>
+                    <img src="pics/homeless_data_01.png">
+                    <div style="padding:30px 0 30px 0;">
+                        <h3>Process Map</h3>
+                    </div>
+                    <img src="pics/homeless_data_02.png">
+
+                    <div style="padding:30px 0 30px 0;">
+                        <h3>Service Blueprint</h3>
+                        <div class="row" style="padding:30px 0 0px 0;">
+                            <div class="col-xs-6 col-md-8">
+                                <img src="pics/homeless_servicebp_1.png">
+                            </div>
+                            <div class="col-xs-6 col-md-4">
+                                <p>After learning the application process of housing services, we combined what we
+                                    learned about
+                                    user journey and supporting process to come up with service blueprint to understand
+                                    how existing
+                                    services support users. We also incorporate what we learned about data flow into
+                                    the blueprint
+                                    to better understand the existing data collection and application problems and
+                                    potentials.
+                                    Because all different agencies have their own process, we choose Mercy Housing as
+                                    an example to analyze.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--Data Research-->
+                <div class="container-fluid" style="padding:50px 0px 0px 0px;">
+                    <div id="item3" class="box-blank"></div>
+                    <h2>Data Research</h2>
+                    <h2 style="font-weight: 900;">&mdash;</h2>
+
+                    <div style="padding:30px 0 0px 0;">
+                        <h3>Relation Between Variables</h3>
+                    </div>
+                    <div class="row" style="padding:30px 0 0px 0;">
+                        <div class="col-xs-6 col-md-4">
+                            <p>To identify important factors which can help us identify high risk population and build
+                                data framework,
+                                we looked at different variables and relationship between them. We used visualization
+                                for not only
+                                coming up with hypotheses about which factors matter, but also proving or disproving
+                                hypotheses
+                                generated from previous research. </p>
+                        </div>
                         <div class="col-xs-6 col-md-8">
-                            <img src="pics/homeless_servicebp_1.png">
+                            <div id="carousel-1" class="carousel slide carousel-fade" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carousel-1" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carousel-1" data-slide-to="1"></li>
+                                    <li data-target="#carousel-1" data-slide-to="2"></li>
+                                    <li data-target="#carousel-1" data-slide-to="3"></li>
+                                    <li data-target="#carousel-1" data-slide-to="4"></li>
+                                    <li data-target="#carousel-1" data-slide-to="5"></li>
+                                    <li data-target="#carousel-1" data-slide-to="6"></li>
+                                    <li data-target="#carousel-1" data-slide-to="7"></li>
+                                    <li data-target="#carousel-1" data-slide-to="8"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img class="d-block w-100" src="pics/homeless_data_11.png" alt="First slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100" src="pics/homeless_data_12.png" alt="Second slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100" src="pics/homeless_data_13.png" alt="Third slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100" src="pics/homeless_data_14.png" alt="Forth slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100" src="pics/homeless_data_15.png" alt="Fifth slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100" src="pics/homeless_data_16.png" alt="Sixth slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100" src="pics/homeless_data_17.png" alt="Seventh slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100" src="pics/homeless_data_18.png" alt="Eighth slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100" src="pics/homeless_data_19.png" alt="Nineth slide">
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carousel-1" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carousel-1" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="padding:30px 0 0px 0;">
+                        <h3>Data Map</h3>
+                    </div>
+                    <div class="row" style="padding:30px 0 30px 0;">
+                        <div class="col-xs-6 col-md-8">
+                            <img src="pics/homeless_data_03.png">
                         </div>
                         <div class="col-xs-6 col-md-4">
-                        <p>After learning the application process of housing services, we combined what we learned about 
-                            user journey and supporting process to come up with service blueprint to understand how existing 
-                            services support users. We also incorporate what we learned about data flow into the blueprint 
-                            to better understand the existing data collection and application problems and potentials. 
-                            Because all different agencies have their own process, we choose Mercy Housing as an example to analyze.</p>
+                            <p> To identify what kinds of data we can use to predict and how to apply them to identify
+                                high-risk population, we looked at data generated at different stages and through
+                                different channels.
+                                After identify those data points, combing with information we get from primary and
+                                secondary research,
+                                we generated an initial data frame work.</p>
                         </div>
                     </div>
-                </div>           
-            </div>
 
+                    <!-- <p><em>Types of Data</em></p>
+                <img src="pics/homeless_data_05.png">    -->
 
-            <!--Data Research-->
-            <div class="container-fluid"> 
-                <div id="item3" class="box-blank"></div>
-                <h2>Data Research</h2>
-                <h3></h3>
-                
-                <h3></h3>
-                <h3>Relation Between Variables</h3>
-                <p>To identify important factors which can help us identify high risk population and build data framework, 
-                    we looked at different variables and relationship between them. We used visualization for not only 
-                    coming up with hypotheses about which factors matter, but also proving or disproving hypotheses 
-                    generated from previous research. </p>
-                <!-- Carousel -->
-                <div id="carousel-1" class="carousel slide" data-ride="carousel" data-interval="false" data-wrap="true">
-                    <!-- Indicators -->
-                    <ol class="carousel-indicators">
-                        <li data-target="#carousel-1" data-slide-to="0" class="active"></li>
-                        <li data-target="#carousel-1" data-slide-to="1"></li>
-                        <li data-target="#carousel-1" data-slide-to="2"></li>
-                    </ol>                 
-                    <!-- Wrapper for slides -->              
-                    <div class="carousel-inner" role="listbox">                      
-                        <div class="item active">
-                            <img src="pics/homeless_data_11.png">
-                        </div>
-                        <div class="item">
-                            <img src="pics/homeless_data_12.png">
-                        </div>
-                        <div class="item">
-                            <img src="pics/homeless_data_13.png">
-                        </div>
-                        <div class="item">
-                            <img src="pics/homeless_data_14.png">
-                        </div>
-                        <div class="item">
-                            <img src="pics/homeless_data_15.png">
-                        </div>
-                        <div class="item">
-                            <img src="pics/homeless_data_16.png">
-                        </div>
-                        <div class="item">
-                            <img src="pics/homeless_data_17.png">
-                        </div>
-                        <div class="item">
-                            <img src="pics/homeless_data_18.png">
-                        </div>
-                        <div class="item">
-                            <img src="pics/homeless_data_19.png">
-                        </div>
-                    </div>                    
-                    <!-- Controls -->
-                    <a class="left carousel-control" href="#carousel-1" role="button" data-slide="prev">
-                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="right carousel-control" href="#carousel-1" role="button" data-slide="next">
-                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                </div>
-                <h3></h3>
-                <h3></h3>
-                <!-- <h3>Data Framework</h3>
-                <div class="row">
-                    <div class="col-xs-6 col-md-8">
-                        <img src="pics/homeless_data_03.png">
+                    <div style="padding:30px 0 0px 0;">
+                        <h3>Data Mechanism</h3>
                     </div>
-                    <div class="col-xs-6 col-md-4">
-                    <p> To identify what kinds of data we can use to predict and how to apply them to identify 
-                        high-risk population, we looked at data generated at different stages and through different channels. 
-                        After identify those data points, combing with information we get from primary and secondary research, 
-                        we generated an initial data frame work.</p>
-                    </div>
-                </div> -->
-                <h3></h3>
-                <p><em>Types of Data</em></p>
-                <img src="pics/homeless_data_05.png">   
-                <h3></h3>         
-                <p><em>Data Mechanism</em></p>
-                <img src="pics/homeless_data_04.png">
-            </div>
-
-            <!--Hypothesis & Analysis-->
-            <div class="container-fluid"> 
-                <div id="item4" class="box-blank"></div>
-                <h2>Hypothesis &amp; Analysis</h2>
-                <h3></h3>
-                <p>After coming up with the assumptions about which factors may cause residents to become high risk of homeless, 
-                    we begin to think about what types of data are particularly important to identify high risk residents 
-                    who have already got permanent housing. We also think about indicators of each factor, 
-                    how to measure them and where to get the data. After list all the possible factors, 
-                    we pick up some important ones according to our previous research to develop hypotheses 
-                    and design the methods to prove or disprove them. Those hypotheses will finally influence our solutions.</p>
-                
-                <h3></h3>
-                <div class="row">
-                    <div class="col-xs-8 col-md-6" >
-                        <p><em>Data Framework</em></p>
-                        <a href = "https://docs.google.com/spreadsheets/d/1lhevXthHYr0HQGGNxECf53hDxVLcSdL3x3MQHpoxfWM/edit#gid=1637767075" target="_blank">
-                            <img src="pics/homeless_hypothesis_2.png"> 
-                        </a>                      
-                    </div>
-                    <div class="col-xs-8 col-md-6">
-                        <p><em>HYPOTHESES ANALYTICS BLUEPRINT</em></p>
-                        <a href = "https://docs.google.com/spreadsheets/d/1fvIBCDsVijA0fPuH4hSHYa8rF5ezF-Bi_KWdqQpm_Ck/edit#gid=991730407" target="_blank">
-                            <img src="pics/homeless_hypothesis_3.png"> 
-                        </a>                      
-                    </div>
-                </div>  
-                <h3></h3>
-                <div class="row">
-                    <div class="col-xs-6 col-md-4" >
-                        <h3 align="center">&bull; Self-Discipline </h3>                                           
-                    </div>
-                    <div class="col-xs-6 col-md-4">
-                        <h3 align="center">&bull; Education Level </h3>                                            
-                    </div>
-                    <div class="col-xs-6 col-md-4" >
-                        <h3 align="center">&bull; Social Relationship </h3>                                           
+                    <div class="row" style="padding:30px 0 0px 0;">
+                        <div class="col-xs-6 col-md-8">
+                            <img src="pics/homeless_data_04.png">
+                        </div>
                     </div>
                 </div>
-                <h3></h3> 
-                <img src="pics/homeless_hypothesis_1.png">           
-            </div>
 
-            <!--Synthesis &amp; Solutioning-->
-            <div class="container-fluid"> 
-                <div id="item5" class="box-blank"></div>
-                <h2 align="left">Synthesis &amp; Solutioning</h2>
-                <h3></h3>
-                <h3>Concept Ideation</h3>
-                <div class="row">
-                    <div class="col-xs-6 col-md-8">
-                        <img src="pics/homeless_ideation.png">
+                <!--Hypothesis & Analysis-->
+                <div class="container-fluid" style="padding:50px 0px 0px 0px;">
+                    <div id="item4" class="box-blank"></div>
+                    <h2>Hypothesis &amp; Analysis</h2>
+                    <h2 style="font-weight: 900;">&mdash;</h2>
+
+                    <div class="row" style="padding:30px 0 0px 0;">
+                        <div class="col-xs-16 col-md-8">
+                            <p>After coming up with the assumptions about which factors may cause residents to become
+                                high risk of homeless,
+                                we begin to think about what types of data are particularly important to identify high
+                                risk residents
+                                who have already got permanent housing. We also think about indicators of each factor,
+                                how to measure them and where to get the data. After list all the possible factors,
+                                we pick up some important ones according to our previous research to develop hypotheses
+                                and design the methods to prove or disprove them. Those hypotheses will finally
+                                influence our solutions.</p>
+
+                        </div>
                     </div>
-                    <div class="col-xs-6 col-md-4">
-                    <p> After generating the data framework and hypotheses, we selected three groups of people 
-                        which can be identified through data that we want to intervene through our services. 
-                        We ideate 100+ ideas about how can we provide appropriate services to those users, 
-                        and we map them onto a service journey.</p>
+                    <div class="row" style="padding:30px 0 50px 0;">
+                        <div class="col-xs-8 col-md-6">
+                            <h3>Data Framework</h3>
+                            <div class="insight-img" style="height:300px;width:100%;overflow:scroll;">
+                                <a href="https://docs.google.com/spreadsheets/d/1lhevXthHYr0HQGGNxECf53hDxVLcSdL3x3MQHpoxfWM/edit#gid=1637767075"
+                                    target="_blank">
+                                    <img src="pics/homeless_hypothesis_2.png" width="960px" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xs-8 col-md-6">
+                            <h3>Hypotheses Analytics Blueprint</h3>
+                            <div class="insight-img" style="height:300px;width:100%;overflow:scroll;">
+                                <a href="https://docs.google.com/spreadsheets/d/1fvIBCDsVijA0fPuH4hSHYa8rF5ezF-Bi_KWdqQpm_Ck/edit#gid=991730407"
+                                    target="_blank">
+                                    <img src="pics/homeless_hypothesis_3.png" width="960px" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="left-margin">
+                        <h3>Self-Discipline, Education Level, and Social Relationship <br>are 3 main metrics
+                            to identify a high-risk post-homeless based on our hypothesis.</h3>
+                    </div>
+                    <div style="padding:60px 0 0px 0;">
+                        <img src="pics/homeless_hypothesis_1.png">
                     </div>
                 </div>
-                <h3></h3>         
-                <p><em>Solution Framework</em></p>
-                <img src="pics/homeless_solution_1.png">
-                <div class="box-blank"></div> 
-                <h3>Final Solution</h3>
-                <div class="row">
-                    <div class="col-xs-8 col-md-6" >
-                        <p><em>Poster</em></p>
-                        <a href = "files/homeless_deliverable_1.pdf" target="_blank">
-                            <img src="pics/homeless_deliverable_1.png">
-                        </a>                       
-                    </div>
-                    <div class="col-xs-8 col-md-6" >
-                        <p><br><br>Our solution is a new service for both case managers and post-homeless based on HMIS system. 
-                                    We will collect data from guests through multiple touch points both when they're in shelters 
-                                    and after they graduated. Then we will use our algorithm to calculate the risk scores in three categories 
-                                    to predict the possibilities of them to become homeless again. Case managers can use this information 
-                                    to find more appropriate services for them to improve and provide intervention when necessary.</p>                       
-                    </div>                   
-                </div> 
-                <h3></h3>                
-                <p><em>Storyboard</em></p>
-                <a href = "files/homeless_deliverable_2.pdf" target="_blank">
-                        <img src="pics/homeless_deliverable_2.png">   
-                </a> 
-                <h3></h3>
-                <div class="row">
-                    <div class="col-xs-8 col-md-3" >
-                        <p><em>Graduate Survey</em></p>
-                        <a href = "files/homeless_deliverable_3.pdf" target="_blank">
-                            <img src="pics/homeless_deliverable_3.png"> 
-                        </a>                      
-                    </div>
-                    <div class="col-xs-8 col-md-3">
-                        <p><em>Questionnaire Card</em></p>
-                        <a href = "files/homeless_deliverable_4.pdf" target="_blank">
-                            <img src="pics/homeless_deliverable_4.png">  
-                        </a>                     
-                    </div>
-                    <div class="col-xs-12 col-md-6">
-                        <p><em>Case Management System</em></p>
-                        <a href = "https://marvelapp.com/11i9ib76f" target="_blank">
-                            <img src="pics/homeless_deliverable_5.png">
-                        </a>                       
-                    </div>
-                </div> 
-                <h3>New Service Blueprint</h3>
-                <div>
-                    <a href = "files/homeless_servicebp_2.pdf" target="_blank">
-                        <img src="pics/homeless_servicebp_2.png" class="img-responsive">
-                    </a>                  
-                </div> 
-                <h3></h3>
-                <h3>Data Flow in the System</h3>
-                <div>
-                    <a href = "files/homeless_system.pdf" target="_blank">
-                        <img src="pics/homeless_system.png" class="img-responsive">
-                    </a>                  
-                </div>               
-            </div>
 
-            <!--Feedback-->
-            <div class="container-fluid"> 
-                <div id="item6" class="box-blank"></div>
-                <h2>Feedback</h2>
-                <h3></h3>
-                <p>After designing the service and main touchpoints, we go back to case managers to test our concepts. 
-                    Case managers think our solution in general can address their issues. But the details of each touchpoints 
-                    may need further refinement. We modify our service and touchpoints according to their feedback.</p>
-                <h3></h3>
-                <div class="row">
-                    <div class="col-xs-6 col-md-4" >
-                        <img src="pics/homeless_feedback_1.png">                    
+                <!--Synthesis &amp; Solutioning-->
+                <div class="container-fluid" style="padding:50px 0px 0px 0px;">
+                    <div id="item5" class="box-blank"></div>
+                    <h2>Synthesis &amp; Solutioning</h2>
+                    <h2 style="font-weight: 900;">&mdash;</h2>
+
+                    <div style="padding:30px 0 0px 0;">
+                        <h3>Concept Ideation</h3>
                     </div>
-                    <div class="col-xs-6 col-md-4">
-                        <img src="pics/homeless_feedback_2.png">  
+                    <div class="row" style="padding:30px 0 30px 0;">
+                        <div class="col-xs-6 col-md-8">
+                            <img src="pics/homeless_ideation.png">
+                        </div>
+                        <div class="col-xs-6 col-md-4">
+                            <p> After generating the data framework and hypotheses, we selected three groups of people
+                                which can be identified through data that we want to intervene through our services.
+                                We ideate 100+ ideas about how can we provide appropriate services to those users,
+                                and we map them onto a service journey.</p>
+                        </div>
                     </div>
-                    <div class="col-xs-6 col-md-4">
-                        <img src="pics/homeless_feedback_3.png">
+                    <div style="padding:30px 0 0px 0;">
+                        <h3>Solution Framework</h3>
                     </div>
-                </div> 
-                                      
+                    <div class="row" style="padding:30px 0 30px 0;">
+                        <div class="col-xs-6 col-md-8">
+                            <img src="pics/homeless_solution_1.png">
+                        </div>
+                    </div>
+
+                    <div style="padding:30px 0 0px 0;">
+                        <h3>Final Solution</h3>
+                    </div>
+
+                    <div class="row" style="padding:30px 0 0px 0;">
+                        <div class="col-xs-8 col-md-8">
+                            <p> Our solution is a new service for both case managers and post-homeless based on
+                                HMIS system.
+                                We will collect data from guests through multiple touch points both when they're in
+                                shelters
+                                and after they graduated. Then we will use our algorithm to calculate the risk scores
+                                in three categories
+                                to predict the possibilities of them to become homeless again. Case managers can use
+                                this information
+                                to find more appropriate services for them to improve and provide intervention when
+                                necessary.</p>
+
+
+                        </div>
+                    </div>
+                    <div class="row" style="padding:30px 0 0px 0;">
+                        <div class="col-xs-8 col-md-8">
+                            <img src="pics/homeless_team.jpg">
+                            <p class="info"><br>&Iota; &nbsp; Presentation Day</p>
+                        </div>
+                        <div class="col-xs-8 col-md-4">
+                            <a href="files/homeless_deliverable_1.pdf" target="_blank">
+                                <img src="pics/homeless_deliverable_1.png">
+                            </a>
+                            <p class="info"><br>&Iota; &nbsp; Main Poster</p>
+                        </div>
+                    </div>
+
+                    <div style="padding:30px 0 0px 0;">
+                        <h3>Deliveralbes</h3>
+                    </div>
+                    <div style="padding:30px 0 0px 0;">
+                        <a href="files/homeless_deliverable_2.pdf" target="_blank">
+                            <img src="pics/homeless_deliverable_2.png">
+                        </a>
+                        <p class="info"><br>&Iota; &nbsp; Sub Poster: Storyboard</p>
+                    </div>
+
+                    <div class="row" style="padding:30px 0 0px 0;">
+                        <div class="col-xs-8 col-md-4">
+                            <a href="files/homeless_deliverable_3.pdf" target="_blank">
+                                <img src="pics/homeless_deliverable_3.png">
+                            </a>
+                            <p class="info"><br>&Iota; &nbsp; Graduate Survey</p>
+                        </div>
+                        <div class="col-xs-8 col-md-8">
+                            <a href="files/homeless_deliverable_4.pdf" target="_blank">
+                                <img src="pics/homeless_deliverable_4.png">
+                            </a>
+                            <p class="info"><br>&Iota; &nbsp; Questionnaire Card</p>
+                        </div>
+                    </div>
+                    <div class="row" style="padding:30px 0 0px 0;">
+                        <div class="col-xs-12 col-md-4">
+                            <a href="https://marvelapp.com/11i9ib76f" target="_blank">
+                                <img src="pics/homeless_deliverable_5.png">
+                            </a>
+                            <p class="info"><br>&Iota; &nbsp; Case Management System: Index</p>
+                        </div>
+                        <div class="col-xs-12 col-md-4">
+                            <a href="https://marvelapp.com/11i9ib76f" target="_blank">
+                                <img src="pics/homeless_deliverable_6.png">
+                            </a>
+                            <p class="info"><br>&Iota; &nbsp; Case Management System: Dashboard</p>
+                        </div>
+                        <div class="col-xs-12 col-md-4">
+                            <a href="https://marvelapp.com/11i9ib76f" target="_blank">
+                                <img src="pics/homeless_deliverable_7.png">
+                            </a>
+                            <p class="info"><br>&Iota; &nbsp; Case Management System: Cases Management</p>
+                        </div>
+                    </div>
+                    <div style="padding:30px 0 30px 0;">
+                        <h3>New Service Blueprint</h3>
+                    </div>
+                    <div>
+                        <a href="files/homeless_servicebp_2.pdf" target="_blank">
+                            <img src="pics/homeless_servicebp_2.png" class="img-responsive">
+                        </a>
+                    </div>
+                    <div style="padding:30px 0 30px 0;">
+                        <h3>Data Flow in the System</h3>
+                    </div>
+                    <div>
+                        <a href="files/homeless_system.pdf" target="_blank">
+                            <img src="pics/homeless_system.png" class="img-responsive">
+                        </a>
+                    </div>
+                </div>
+
+                <!--Feedback-->
+                <div class="container-fluid" style="padding:50px 0px 0px 0px;">
+                    <div id="item6" class="box-blank"></div>
+                    <h2>Feedback</h2>
+                    <h2 style="font-weight: 900;">&mdash;</h2>
+
+                    <div class="row" style="padding:30px 0 0px 0;">
+                            <div class="col-xs-8 col-md-8">
+                        <p>After designing the service and main touchpoints, we go back to case managers to test our
+                            concepts.
+                            Case managers think our solution in general can address their issues. But the details of
+                            each
+                            touchpoints
+                            may need further refinement. We modify our service and touchpoints according to their
+                            feedback.</p>
+                            </div>
+                    </div>
+
+                    <div class="row" style="padding:30px 0 60px 0;">
+                        <div class="col-xs-6 col-md-4">
+                            <img src="pics/homeless_feedback_1.png">
+                        </div>
+                        <div class="col-xs-6 col-md-4">
+                            <img src="pics/homeless_feedback_2.png">
+                        </div>
+                        <div class="col-xs-6 col-md-4">
+                            <img src="pics/homeless_feedback_3.png">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="box-blank"></div>
+                <div class="box-blank"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid container-bottom"> 
+            <div class="box-blank"></div>
+            <div class="box-blank"></div>    
+            <div class="row mx-auto d-block" align="center">
+                <a href="http://www.facebook.com/yenan.lin.18">
+                    <img id="link" src="pics/logo_facebook.png">
+                </a>
+                <a href="https://www.linkedin.com/in/sophielynnn/?locale=en_US">
+                    <img id="link" src="pics/logo_linkedin.png">
+                </a>
+                <a href="https://github.com/sophielynn/sophielynn.github.io">
+                    <img id="link" src="pics/logo_github.png">
+                </a>
+                <a href="mailto:ylin89@id.iit.edu">
+                    <img id="link" src="pics/logo_email.png">
+                </a>
+            </div>
+            
+            <div class="row mx-auto d-block" align="center">
+                <h4>© 2017 Yenan Lin all rights reserved</h4>
             </div>
             <div class="box-blank"></div> 
-            <div class="box-blank"></div>              
+             
         </div>
-    </div>
 
-    <div class="container container-bottom"> 
-        <div class="box-blank"></div>
-        <div class="box-blank"></div>    
-        <div class="row" align="center">
-            <a href="http://www.facebook.com/yenan.lin.18">
-                <img id="link" src="pics/logo_facebook.png">
-            </a>
-            <a href="https://www.linkedin.com/in/sophielynnn/?locale=en_US">
-                <img id="link" src="pics/logo_linkedin.png">
-            </a>
-            <a href="https://github.com/sophielynn/sophielynn.github.io">
-                <img id="link" src="pics/logo_github.png">
-            </a>
-            <a href="mailto:ylin89@id.iit.edu">
-                <img id="link" src="pics/logo_email.png">
-            </a>
-        </div>
-        
-        <div class="row" align="center">
-            <h4>© 2017 Yenan Lin all rights reserved</h4>
-        </div>
-        <div class="box-blank"></div> 
-         
-    </div>
-
-    <script src="assets/js/script.js"></script> 
-	<script src="assets/js/main.js"></script>
-    <script src="assets/js/scroll.js"></script> 
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/scroll.js"></script>
 
 </body>

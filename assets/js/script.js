@@ -9,19 +9,30 @@ anchorTop = Number(anchorTop.substring(0, anchorTop.indexOf("p")));  //首先在
 
 $(window).scroll(function() {
     var top = document.documentElement.scrollTop || document.body.scrollTop; 
-    if ($(this).scrollTop() >420){ 
+    if ($(this).scrollTop() >500 & $(this).scrollTop() <620){ 
         $('header').addClass("sticky");
         boxes[0].style.height = "550px";
         $("#subhead").hide();
+        $('header').css("opacity", ($(this).scrollTop()-500)/160);
+        $("#mainhead").css("opacity", ($(this).scrollTop()-500)/120);
+    }
+    else if ($(this).scrollTop() >=620){ 
+        $('header').addClass("sticky");
+        boxes[0].style.height = "550px";
+        $("#subhead").hide();
+        $('header').css("opacity", 0.75);
+        $("#mainhead").css("opacity", 1);
     }
     else{
         $('header').removeClass("sticky");
         boxes[0].style.height = "50px";
         $("#subhead").show();
+        $('header').css("opacity", 1);
+        $("#mainhead").css("opacity", 1);     
     }
 
-    if ($(this).scrollTop() >700){ 
-        $("#Ubax").css("top", anchorTop + top - 700 + "px");  
+    if ($(this).scrollTop() >750){ 
+        $("#Ubax").css("top", anchorTop + top - 750 + "px");  
     }
     else{
         $("#Ubax").css("top", anchorTop + "px");  
