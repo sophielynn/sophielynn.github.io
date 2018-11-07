@@ -99,6 +99,12 @@ h3{
     font-weight: 400;
 }
 
+h3 em{
+
+    font-weight: 700;
+
+}
+
 h4{
     color:white;
     font-size: 10px;
