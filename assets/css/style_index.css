@@ -3,8 +3,10 @@ body, html, main {
 }
 
 body{
-    /* background:url("../../pics/cover2.png"); */
-    filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale')";
+    background:url("../../pics/cover4.jpeg");
+    
+    /* filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale')"; */
+    opacity: 50%;
     min-height: 100%;
     background-size: cover;
     background-attachment: fixed;
@@ -24,7 +26,8 @@ h1{
 
 h2{
    font-family: 'Ubuntu', sans-serif;
-   line-height: 36px;
+   line-height: 5em;
+   line-height: 1.4em;
 }
 
 h4{
@@ -92,12 +95,10 @@ p{
 }
 
 .container{
-    background-image: none;
-    background-color: #eeeeee;
+    background:rgba(255,255,255,.8);
     width: 100%;
     align-content: center;
-    padding-left:5%;
-    padding-right:5%;
+    padding: 10px 5% 10px 5%;
 }
 
 .container.container-bottom{
