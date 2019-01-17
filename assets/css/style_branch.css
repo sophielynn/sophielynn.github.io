@@ -79,10 +79,16 @@ p.info em{
     align: center;
 }
 
+h1{
+    /* font-size: 24px; */
+    font-family: 'Ubuntu', sans-serif;
+    /* line-height: 18px; */
+}
+
 h2{
     font-size: 24px;
     font-family: 'Ubuntu', sans-serif;
-    line-height: 18px;
+    line-height: 24px;
 }
 h2 mark{
     color: #ffffff;
@@ -94,7 +100,7 @@ h2 mark{
 h3{
     color: #444;
     font-size: 20px;
-    line-height: 42px;
+    line-height: 36px;
     font-family: 'Muli', sans-serif;
     font-weight: 400;
 }

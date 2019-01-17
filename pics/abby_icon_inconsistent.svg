@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="46px" height="46px" viewBox="0 0 46 46" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>icn_inconsistent</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Abby" transform="translate(-188.000000, -1404.000000)" fill="#FF5A60" fill-rule="nonzero">
+            <g id="icn_inconsistent" transform="translate(188.000000, 1404.000000)">
+                <path d="M17,0 L1,0 C0.448,0 0,0.448 0,1 L0,17 C0,17.552 0.448,18 1,18 L17,18 C17.552,18 18,17.552 18,17 L18,1 C18,0.448 17.552,0 17,0 Z M16,16 L2,16 L2,2 L16,2 L16,16 Z" id="Shape"></path>
+                <path d="M37,18 C41.963,18 46,13.962 46,9 C46,4.038 41.963,0 37,0 C32.037,0 28,4.038 28,9 C28,13.962 32.037,18 37,18 Z M37,2 C40.859,2 44,5.14 44,9 C44,12.86 40.859,16 37,16 C33.141,16 30,12.86 30,9 C30,5.14 33.141,2 37,2 Z" id="Shape"></path>
+                <path d="M9.895,28.553 C9.556,27.875 8.445,27.875 8.106,28.553 L0.106,44.553 C-0.049,44.863 -0.032,45.231 0.15,45.526 C0.332,45.821 0.653,46 1,46 L17,46 C17.347,46 17.668,45.82 17.851,45.525 C18.034,45.23 18.05,44.862 17.895,44.552 L9.895,28.553 Z M2.618,44 L9,31.236 L15.382,44 L2.618,44 Z" id="Shape"></path>
+                <path d="M41,28 L33,28 C30.243,28 28,30.243 28,33 L28,41 C28,43.757 30.243,46 33,46 L41,46 C43.757,46 46,43.757 46,41 L46,33 C46,30.243 43.757,28 41,28 Z M44,41 C44,42.654 42.654,44 41,44 L33,44 C31.346,44 30,42.654 30,41 L30,33 C30,31.346 31.346,30 33,30 L41,30 C42.654,30 44,31.346 44,33 L44,41 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

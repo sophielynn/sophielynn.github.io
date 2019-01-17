@@ -3,7 +3,7 @@ body, html, main {
 }
 
 body{
-    background:url("../../pics/cover4.jpeg");
+    /* background:url("../../pics/cover4.jpeg"); */
     /* filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale')"; */
     opacity: 90%;
     min-height: 100%;
@@ -24,8 +24,9 @@ h1{
 }
 
 h2{
-   font-family: 'Ubuntu', sans-serif;
-   line-height: 5em;
+    font-size: 1.2em;
+    font-family: 'Ubuntu', sans-serif;
+   /* line-height: 5em; */
    line-height: 1.4em;
 }
 
@@ -38,7 +39,7 @@ h4{
 
 p{
     font-family: 'Muli', sans-serif;
-    font-size: 18px;
+    font-size: 2em;
     line-height: 24px;
     font-weight: 300;
     
