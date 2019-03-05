@@ -26,16 +26,16 @@
 		});
 
 
-		[].slice.call(document.querySelectorAll('.link-copy')).forEach(function (link) {
-			link.setAttribute('data-clipboard-text', location.protocol + '//' + location.host + location.pathname + '#' + link.parentNode.id);
-			new Clipboard(link);
-			link.addEventListener('click', function () {
-				link.classList.add('link-copy--animate');
-				setTimeout(function () {
-					link.classList.remove('link-copy--animate');
-				}, 300);
-			});
-		});
+		// [].slice.call(document.querySelectorAll('.link-copy')).forEach(function (link) {
+		// 	link.setAttribute('data-clipboard-text', location.protocol + '//' + location.host + location.pathname + '#' + link.parentNode.id);
+		// 	new Clipboard(link);
+		// 	link.addEventListener('click', function () {
+		// 		link.classList.add('link-copy--animate');
+		// 		setTimeout(function () {
+		// 			link.classList.remove('link-copy--animate');
+		// 		}, 300);
+		// 	});
+		// });
 	}
 
 	init();

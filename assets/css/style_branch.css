@@ -13,9 +13,11 @@ header{
     padding-top: 320px;
     padding-left: 5.8%;
     height: 500px;
+    background-size: cover;
     /* background:url("../../pics/cover2.png"); */
     color: #fff;
     font-family: 'Ubuntu', sans-serif;
+    background-repeat:no-repeat；
 
     /*-webkit-transition: all 1s ease;
     transition: all 1s ease;*/
