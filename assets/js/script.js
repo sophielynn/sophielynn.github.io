@@ -31,12 +31,16 @@ $(window).scroll(function () {
         $("#mainhead").css("opacity", 1);
     }
 
-    if ($(this).scrollTop() > 750) {
-        $("#Ubax").css("top", anchorTop + top - 750 + "px");
-        console.log($("#Ubax").css("top"));
+    if ($(this).scrollTop() > 740) {
+        // $("#Ubax").css("top", anchorTop + top - 750 + "px");
+        $("#Ubax").css("position", "fixed");
+        $("#Ubax").css("top", 210+"px");
+        // console.log($("#Ubax").css("top"));
     }
     else {
-        $("#Ubax").css("top", anchorTop + "px");
+        // $("#Ubax").css("top", anchorTop + "px");
+        $("#Ubax").css("position", "relative");
+        $("#Ubax").css("top", 50+"px");
     }
 
 

@@ -58,21 +58,25 @@ p{
 }
 
 p.info{
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 400;
+    color:#3446a2;
 }
 
 p em{
     font-style: normal;
     /* text-transform: uppercase; */
-    font-weight: 600;
+    font-weight: 300;
     font-size: 16px;
+    background: #dfe5ff;
 }
 
 p.info em{
-    font-size: 14px;
+    font-size: 16px;
     text-transform: none;
     font-weight: 400;
+    background: none;
+    color:black;
 }
 
 .reverse{
@@ -84,13 +88,15 @@ p.info em{
 h1{
     /* font-size: 24px; */
     font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
     /* line-height: 18px; */
 }
 
 h2{
     font-size: 24px;
     font-family: 'Ubuntu', sans-serif;
-    line-height: 24px;
+    line-height: 28px;
+    font-weight: 500;
 }
 /* h2 mark{
     color: #ffffff;
@@ -104,31 +110,34 @@ h3{
     font-size: 20px;
     line-height: 36px;
     font-family: 'Muli', sans-serif;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 h3 em{
-
-    font-weight: 700;
+    font-style:normal;
+    font-weight: 600;
 
 }
 
 h4{
-    color:white;
-    font-size: 10px;
-    margin-top:70px;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    font-family: 'Ubuntu', sans-serif;
+    line-height: 24px;
+    font-weight: 500;
+    text-transform:uppercase;
+    padding: 70px 0 30px 0;
+    color: #444;
 }
 
 p mark{
     color:white;
-    /* background-color:red; */
+    background-color:#3446a2;
     font-weight: 600;
 }
 
 #Ubax{
     position: relative;
-    top:40px;
+    top:50px;
 }
 
 main.sticky{
@@ -149,16 +158,15 @@ img{
     background-image: none;
     width: 100%;
     align-content: center;
-    padding-left:5%;
-    padding-right:0;
+    padding-left:2%;
+    padding-right:2%;
 }
 
 .container-fluid.container-bottom{
     background-image: none;
     width: 100%;
     align-content: center;
-    padding-left:5%;
-    padding-right:5%;
+    padding:5%;
 }
 
 #link{      
@@ -180,8 +188,8 @@ img{
     padding: 15px 40px 10px 40px;
     background-color: #fff;
     border: 0px solid #000;
-    border-left-width: 6px;
-    border-radius: 4px;
+    border-left-width: 0px;
+    border-radius: 20px;
 }
 
 
