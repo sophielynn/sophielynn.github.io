@@ -39,10 +39,18 @@ h4{
 
 p{
     font-family: 'Muli', sans-serif;
-    font-size: 2em;
+    font-size: 1.8em;
     line-height: 24px;
     font-weight: 300;
     
+}
+
+p em{
+    font-style: normal;
+    font-family: 'Muli', sans-serif;
+    line-height: 24px;
+    font-weight: 300;
+    font-size: 16px;
 }
 
 #maintitle{    
@@ -94,20 +102,19 @@ p{
     width: 100%;
 }
 
-.container{
+.container-fluid{
     background:rgba(255,255,255,.8);
     width: 100%;
     align-content: center;
-    padding: 10px 5% 10px 5%;
+    padding: 5% 5% 15% 5%;
 }
 
-.container.container-bottom{
+.container-fluid.container-bottom{
     background-image: none;
     background-color: #3446a2;
     width: 100%;
     align-content: center;
-    padding-left:5%;
-    padding-right:5%;
+    padding:5%;
 }
 
 #link{      
