@@ -443,7 +443,6 @@
                             </p>
                         </div>
                     </div>
-
                 </div>
 
 
@@ -561,7 +560,7 @@
                             <div class="col-12 col-md-8">
                                 <p> The first screen which is also the first step for users
                                     is Explore, <em>either with bars they frequently visit
-                                    or with bars they want to try for the very first time</em>.
+                                        or with bars they want to try for the very first time</em>.
                                     The question is how can we provide those bar information
                                     in a way that everybody gets what they want.
                                 </p>
@@ -596,14 +595,14 @@
                                 <img src="pics/shindy_explore2b.png" class="img-responsive">
                             </div>
                             <div class="col-6 col-md-4">
-                                <p> I translated two major user scenarios directly into the 
+                                <p> I translated two major user scenarios directly into the
                                     next version of Explore Page - bars they frequently visit
                                     and bars they want to try, with a tab on the top to toggle.
-                                    But after I did some further research, I found 
-                                    most apps always keeps "My Favorite" in deeper layers. 
-                                    And not everybody respond well with it. <em>So I need a 
-                                    better way to sort and illustrate the information 
-                                    instead of using "My Favorite".</em> 
+                                    But after I did some further research, I found
+                                    most apps always keeps "My Favorite" in deeper layers.
+                                    And not everybody respond well with it. <em>So I need a
+                                        better way to sort and illustrate the information
+                                        instead of using "My Favorite".</em>
                                 </p>
                                 <p style="padding-top: 20px;"><mark>CONS</mark></p>
                                 <p>User input needed in front</p>
@@ -623,12 +622,12 @@
                             <div class="col-6 col-md-4">
                                 <p> I replaced "My Favorite" with "Nearby". Because from research,
                                     most people would prefer to choose a bar in their neighbourhood,
-                                    or somewhere near their workplace. Accessibility is a big 
+                                    or somewhere near their workplace. Accessibility is a big
                                     factor that impacts the frequency of their visits.
-                                    While the content is determined, there is a lot of discussion on 
-                                    the layout and style. <em>We discussed further on the mindset of 
-                                    our users. What do they think of this app when they see the 
-                                    first screen?</em> Definitely we don't want the answer to be "a fake
+                                    While the content is determined, there is a lot of discussion on
+                                    the layout and style. <em>We discussed further on the mindset of
+                                        our users. What do they think of this app when they see the
+                                        first screen?</em> Definitely we don't want the answer to be "a fake
                                     Yelp". We want something represents our value yet also make sense to users.
                                 </p>
                                 <p style="padding-top: 20px;"><mark>CONS</mark></p>
@@ -647,9 +646,9 @@
                                 <img src="pics/shindy_explore4b.png" class="img-responsive">
                             </div>
                             <div class="col-6 col-md-4">
-                                <p> We decided to show bar information in big thumbnails, 
+                                <p> We decided to show bar information in big thumbnails,
                                     so that users can really focus on the details of the bars,
-                                    instead of just images and names. 
+                                    instead of just images and names.
                                     We merge two categories of bars together, in a certain
                                     order. We put bars that are closest to the user at top.
                                     And featured bars suggested by the system will follow.
@@ -713,32 +712,132 @@
                     <h2>CHALLENGE TWO - PROVIDING USER-CENTERED CONTENT IN SEARCH RESULT </h2>
                     <h2 style="font-weight: 900;">&mdash;</h2>
 
-                    <div class="row" style="padding-top: 70px;">
-                        <div class="col-md-2">
-                            <p>Version One - <br> Common Practice</p>
-                        </div>
-                        <div class="col-md-1">
-                            <h3 class="text-center">></h3>
-                        </div>
-                        <div class="col-md-2">
-                            <p>Version Two - <br> </p>
-                        </div>
-                        <div class="col-md-1">
-                            <h3 class="text-center">></h3>
-                        </div>
-                        <div class="col-md-2">
-                            <p>Version Three - <br> </p>
-                        </div>
-                    </div>
-                    <div class="row" style="padding-top: 20px;">
-                        <div class="col-md-2">
+                    <h4>Version One - Common Practice</h4>
+                    <div class="row">
+                        <div class="col-3 col-md-2">
                             <img src="pics/shindy_wireframe_search_1.png" class="img-responsive">
                         </div>
-                        <div class="col-md-2 offset-md-1">
+                        <div class="col-6 col-md-4">
+                            <p> For Search Page, we started with the common practice.
+                                Users are allowed to change the order, filter results,
+                                and toggle between list and map view.
+                                There are many factors to be considered for ordering
+                                and filtering. Best match, distance, price, rating, popularity,
+                                open hours, etc.
+                                <em> The problem is, how can we deliver these info in a way
+                                    that make sense to bar customers specifically</em>.
+                            </p>
+                            <p style="padding-top: 20px;"><mark>PROS</mark></p>
+                            <p>Common practice for Search Page</p>
+                            <p style="padding-top: 20px;"><mark>CONS</mark></p>
+                            <p>Not optimized for bar customers</p>
+                        </div>
+                    </div>
+
+                    <h4>Version Two - Categorize by Distance</h4>
+                    <div class="row">
+                        <div class="col-3 col-md-2">
                             <img src="pics/shindy_wireframe_search_2.png" class="img-responsive">
                         </div>
-                        <div class="col-md-2 offset-md-1">
+                        <div class="col-6 col-md-4">
+                            <p> One of the key findings from research claims that, the distance really
+                                plays an important role in the possibility of paying a visit
+                                to a bar. We also did a further research in which a report based on
+                                Big Data told us that average people would like to go to bars that
+                                are within 14 minutes drive. <em>Therefore we categorized our search result
+                                    into three tiers - walking distance, within 20 min drive, and farther.</em>
+                                So that users would know where to focus.
+                            </p>
+                            <p style="padding-top: 20px;"><mark>UPDATES</mark></p>
+                            <p>Result list categorized by distance</p>
+                        </div>
+                    </div>
+
+                    <h4>Version Three - Options expanded</h4>
+                    <div class="row">
+                        <div class="col-3 col-md-2">
                             <img src="pics/shindy_wireframe_search_3.png" class="img-responsive">
+                        </div>
+                        <div class="col-6 col-md-4">
+                            <p> Finaly, we have a discussion on what are other important factors
+                                that might influence user's choice. We don't want to flood users
+                                with choices. <em>We tried to make less being more especially at early stages.
+                                    We narrow it to 3 factors that are expanded on the top bar.</em>
+                                It's also compatible for future versions. We can definitely put more
+                                options on it. And users can scroll horizontally to choose.
+                            </p>
+                            <p style="padding-top: 20px;"><mark>UPDATES</mark></p>
+                            <p>Expand filtering options</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-fluid" style="padding:100px 0px 0px 0px;">
+                    <div class="box-blank"></div>
+                    <h2>CHALLENGE THREE - DECISION MAKING ON UI STYLE</h2>
+                    <h2 style="font-weight: 900;">&mdash;</h2>
+
+                    <h4>Workshop on Color Palette</h4>
+                    <div class="row">
+                        <div class="col-12 col-md-4">
+                            <p><mark>1. PREPARE</mark></p>
+                            <p>We prepared a set of images with vaired styles.
+                                They are also with vaired colors and feels.
+                                We printed them out and make them into cards.
+                            </p>
+                            <p style="padding-top: 20px;"><mark>2. WORKSHOP</mark></p>
+                            <p>We gathered the whole team also some potential users.
+                                We talked about our expected look and feel of the product
+                                and how it related to the images.
+                            </p>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <img src="pics/shindy_workshop_images.jpeg" class="img-responsive">
+                        </div>
+                    </div>
+                    <div class="row" style="padding-top: 30px;">
+                        <div class="col-12 col-md-8" style="padding-bottom: 30px;">
+                            <p><mark>3. SYNTHESIS</mark></p>
+                            <p>We gathered all the input from the workshop.
+                                We sorted out those that resonate with most people.
+                                Study the patterns around them. And came up with
+                                6 color palette.
+                            </p>
+                        </div>
+                        <div class="col-12 col-md-8" style="padding-bottom: 30px;">
+                            <img src="pics/shindy_workshop_palette.svg" class="img-responsive">
+                        </div>
+                    </div>
+
+                    <h4>Tryouts on the UI Style</h4>
+                    <div class="row">
+                        <div class="col-12 col-md-8" style="padding-bottom: 30px;">
+                            <p><mark>4. TRYOUTS</mark></p>
+                            <p>We chose one featured screen of our product which includes
+                                key components like images, text, labels, and buttons.
+                                And we played with the color palette on top of it, 
+                                especially with colors that have positive feedback from the team.
+                            </p>
+                        </div>
+                        <div class="col-12 col-md-8">
+                            <img src="pics/shindy_workshop_uis.png" class="img-responsive">
+                        </div>
+                    </div>
+                    <div class="row" style="padding-top: 50px;">
+                        <div class="col-12 col-md-4">
+                            <p><mark>5. FEEDBACK</mark></p>
+                            <p>We narrowed down to 5 looks. Then we did a random inquiry with
+                                customers right in a bar, to ask about their feeling and thoughts
+                                on them.
+                            </p>
+                            <p style="padding-top: 20px;"><mark>6. FINAL DECISION</mark></p>
+                            <p>The final decision is acutally a mixture of input and feedback
+                                from users, as well as aesthetic choices from the designer.
+                            </p>
+                            <p>* Please consult the designer for final deliverable of UI.</p>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <img src="pics/shindy_workshop_cafe.png" class="img-responsive">
                         </div>
                     </div>
                 </div>
