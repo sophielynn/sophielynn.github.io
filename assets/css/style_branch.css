@@ -95,8 +95,14 @@ h1{
 h2{
     font-size: 24px;
     font-family: 'Ubuntu', sans-serif;
-    line-height: 28px;
+    line-height: 32px;
     font-weight: 500;
+}
+
+h2 em{
+    font-style:normal;
+    opacity:0.5;
+
 }
 /* h2 mark{
     color: #ffffff;
@@ -110,7 +116,7 @@ h3{
     font-size: 20px;
     line-height: 36px;
     font-family: 'Muli', sans-serif;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 h3 em{
